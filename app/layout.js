@@ -2,14 +2,14 @@ import "./globals.css";
 import { montserrat } from "@/public/fonts";
 
 export const layourMetadata = {
-  title: 'M&G - 22/03/2025',
+  title: 'S&D - 15/11/2025',
   description: '¡Nos casamos! Ven y celebra con nosotros este día tan especial.',
   icons: {
     icon:'/logo.ico',
   },
   metadataBase: new URL('https://martuygino.vercel.app'), // Agrega esta línea
   openGraph: {
-    title: 'M&G - Nuestra Boda',
+    title: 'S&D - Nuestra Boda',
     description: '¡Nos casamos! Ven y celebra con nosotros este día tan especial.',
     url: 'https://martuygino.vercel.app/',
     type: 'website',

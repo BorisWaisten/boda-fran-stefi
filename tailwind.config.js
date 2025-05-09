@@ -9,6 +9,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        century: ['"Century Gothic"', 'sans-serif'],
+        centuryBold: ['"Century Gothic Bold"', 'sans-serif'],
+        centuryItalic: ['"Century Gothic Italic"', 'sans-serif'],
+        centuryBoldItalic: ['"Century Gothic Bold Italic"', 'sans-serif'],
+        retro: ['"Retro Signature"', 'cursive'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -14,3 +14,37 @@
     }
 }
 
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('/fonts/century-gothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Century Gothic Bold';
+  src: url('/fonts/GOTHICB.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Century Gothic Bold Italic';
+  src: url('/fonts/GOTHICBI.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Century Gothic Italic';
+  src: url('/fonts/GOTHICI.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Retro Signature';
+  src: url('/fonts/retro-signature.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

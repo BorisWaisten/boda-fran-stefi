@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* For rgb(255 115 179 / <alpha-value>) */
+        --color-primary: 17 191 191;
+        --color-secondary: 69 85 89;
+        --color-terciary: 232 233 240;
+        --color-text-primary:69 85 89;
+        --color-text-secondary: 17 191 191;
+
+    }
+}
+

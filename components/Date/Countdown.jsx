@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 export default function Countdown() {
   const calculateTimeLeft = () => {
-    const weddingDate = new Date('2025-03-22T00:00:00'); // Ajusta la fecha y hora de la boda
+    const weddingDate = new Date('2025-11-15T00:00:00');
     const now = new Date();
     const difference = weddingDate - now;
 
@@ -12,15 +12,14 @@ export default function Countdown() {
     if (difference > 0) {
       timeLeft = {
         DIAS: String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(3, '0'),
-        HS: String(Math.floor((difference / (1000 * 60 * 60)) % 24)).padStart(2, '0'),
-        MIN: String(Math.floor((difference / 1000 / 60) % 60)).padStart(2, '0'),
+        HORAS: String(Math.floor((difference / (1000 * 60 * 60)) % 24)).padStart(2, '0'),
+        MINUTOS: String(Math.floor((difference / 1000 / 60) % 60)).padStart(2, '0'),
       };
     } else {
-      // Si el tiempo ha llegado, muestra ceros en todas las unidades
       timeLeft = {
         DIAS: '000',
-        HS: '00',
-        MIN: '00',
+        HORAS: '00',
+        MINUTOS: '00',
       };
     }
 
@@ -39,30 +38,28 @@ export default function Countdown() {
     return () => clearInterval(timer);
   }, []);
 
-  if (!mounted) {
-    return null; // O puedes retornar un loader o un texto estático
-  }
+  if (!mounted) return null;
 
-  const isWeddingDay = timeLeft.DIAS === '000' && timeLeft.HS === '00' && timeLeft.MIN === '00';
+  const isWeddingDay = timeLeft.DIAS === '000' && timeLeft.HORAS === '00' && timeLeft.MINUTOS === '00';
 
-  const timerComponents = [];
-
-  Object.keys(timeLeft).forEach((interval) => {
-    timerComponents.push(
-      <div key={interval} className="m-2 w-16 lg:w-[10vw] md:w-[12vw] p-4 font-bold bg-gray-600 rounded-[0.5rem] md:rounded-[1rem] shadow-lg">
-        <span className={`block text-sm sm:text-3xl md:text-4xl text-white`}>{timeLeft[interval]}</span>
-        <span className={`block text-xs sm:text-xl md:text-2xl text-white`}>{interval}</span>
-      </div>
-    );
-  });
+  const timerComponents = Object.keys(timeLeft).map((interval) => (
+    <div key={interval} className="w-[4rem] sm:w-[7rem] md:w-[8rem] lg:w-[7rem] text-start font-centuryBold mx-2">
+      <span className="block  sm:text-3xl md:text-4xl lg:text-2xl text-[#FDB913]">
+        {timeLeft[interval]}
+      </span>
+      <span className="block  sm:text-lg md:text-xl lg:text-2xl text-[#FDB913]">
+        {interval}
+      </span>
+    </div>
+  ));
 
   return (
-        <div className="flex flex-wrap justify-center items-center">
-          {isWeddingDay ? (
-            <span className={`text-2xl text-gray-700`}>¡Es el día de la boda!</span>
-          ) : (
-            timerComponents
-          )}
-        </div>
+    <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4">
+      {isWeddingDay ? (
+        <span className="text-2xl text-gray-700">¡Es el día de la boda!</span>
+      ) : (
+        timerComponents
+      )}
+    </div>
   );
 }

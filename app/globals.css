@@ -5,11 +5,10 @@
 @layer base {
     :root {
         /* For rgb(255 115 179 / <alpha-value>) */
-        --color-primary: 17 191 191;
-        --color-secondary: 69 85 89;
-        --color-terciary: 232 233 240;
-        --color-text-primary:69 85 89;
-        --color-text-secondary: 17 191 191;
+        --color-primary: 253,185,19;
+        --color-secondary: 0 0 0;
+        --color-text-primary:253,185,19;
+        --color-text-secondary: 0 0 0;
 
     }
 }

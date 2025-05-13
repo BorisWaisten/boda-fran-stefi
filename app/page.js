@@ -9,6 +9,7 @@ import Regalos from '@/components/Gifts/Gifts';
 import ConfirmarAsistencia from '@/components/Asistency/ConfirmAsistency';
 import { layourMetadata } from './layout';
 import MusicPlayer from '@/components/MusicPlayer'; // Importa el nuevo componente
+import "./globals.css"
 
 export const metadata = {
   ...layourMetadata,
@@ -40,6 +41,12 @@ const Home = () => {
         </section>
         <section id='party'> 
           <Party />
+        </section>
+        <section id="regalos">
+          <Regalos />
+        </section>
+        <section id="asistency">
+          <ConfirmarAsistencia />
         </section>
       </main>
       <Footer />

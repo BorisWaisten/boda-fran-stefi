@@ -29,7 +29,7 @@ const informacion = [
 ]
 
   return (
-    <section className="relative py-10 bg-white  text-center md:mt-14 ">
+    <section className="relative py-10 bg-white z-20 text-center md:mt-14 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 max-w-5xl md:max-w-2xl mx-auto ">
         {informacion.map((evento, index) => (
           <div key={index} className="flex flex-col items-center ">
@@ -51,7 +51,7 @@ const informacion = [
 
 
             <button
-              className="mt-4 bg-black text-yellow-400 font-semibold py-2 px-6 rounded-full shadow-md hover:bg-yellow-600 transition-colors"
+              className="mt-4 bg-black text-[#FDB913] font-centuryBold py-2 px-6 rounded-full shadow-md hover:bg-[#FDB913] transition-colors"
               onClick={() => window.open(evento.address)}
             >
               CÓMO LLEGAR

@@ -1,5 +1,4 @@
 import "./globals.css";
-import { montserrat } from "@/public/fonts";
 
 export const layourMetadata = {
   title: 'S&D - 15/11/2025',
@@ -20,7 +19,7 @@ export const layourMetadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" translate="no">
-      <body className= {`text-primary ${montserrat.className}`} >{children}</body>
+      <body className= {`text-black`} >{children}</body>
     </html>
   );
 }

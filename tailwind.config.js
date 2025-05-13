@@ -1,4 +1,3 @@
-const { color } = require('framer-motion');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -24,7 +23,6 @@ module.exports = {
       backgroundColor: {
         primary: 'rgb(var(--color-primary) / <alpha-value>)',
         secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
-        terciary: 'rgb(var(--color-terciary) / <alpha-value>)',
       },
       textColor: {
         primary:' rgb(var(--color-text-primary) / <alpha-value>)',

@@ -13,7 +13,6 @@ import w8 from '../../app/public/martu8.png';
 
 import '../components.css';
 import iconSvg from '../../public/iconCamara.svg';
-import { cinzelDecorative } from '@/public/fonts';
 
 const images = [w1, w2, w3, w4, w5, w6, w7, w8];
 
@@ -68,11 +67,12 @@ const Carousel = () => {
   };
 
   return (
-    <section className="bg-secondary py-8">
+    <section className="bg-[#FDB913] py-8">
+      <Image src ={"./papelrasgado.svg"} alt="Wedding" width={500} height={100} className="  md:w-[200vh]  md:h-[100vh]  scale-x-150 rotate-180 absolute md:top-[-59%] md:left-[50vh] z-[0]" />
       <div className="container mx-auto">
         <div className="grid grid-cols-1 items-center justify-center text-center">
           <Image src={iconSvg} alt="Wedding" className="w-20 h-20 mx-auto" />
-          <h2 className={`${cinzelDecorative.className} text-3xl md:text-4xl text-white mb-8`}>
+          <h2 className={`font-retro text-3xl md:text-4xl text-white mb-8`}>
             NOSOTROS
           </h2>
         </div>
@@ -148,11 +148,12 @@ const Carousel = () => {
             <button
               key={index}
               onClick={() => setCurrentIndex(index * itemsPerPage)}
-              className={`w-3 h-3 rounded-full ${Math.floor(currentIndex / itemsPerPage) === index ? 'bg-white' : 'bg-primary'}`}
+              className={`w-3 h-3 rounded-full ${Math.floor(currentIndex / itemsPerPage) === index ? 'bg-white' : 'bg-secondary'}`}
             ></button>
           ))}
         </div>
       </div>
+      <Image src ={"./papelrasgado.svg"} alt="Wedding" width={500} height={100} className="  md:w-[200vh]  md:h-[100vh]  scale-x-150  absolute md:bottom-[-60%] md:right-[50vh] z-[0]" />
     </section>
   );
 };

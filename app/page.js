@@ -41,12 +41,6 @@ const Home = () => {
         <section id='party'> 
           <Party />
         </section>
-        <section id="gifts">
-          <Regalos />
-        </section>
-        <section id="asistency">
-          <ConfirmarAsistencia />
-        </section>
       </main>
       <Footer />
       <MusicPlayer />

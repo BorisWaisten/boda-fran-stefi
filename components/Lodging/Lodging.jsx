@@ -40,14 +40,14 @@ const Lodging = () => {
       <Image
         src={hojitasIcon}
         alt="decoración"
-        className="absolute top-0 left-[3vh] rotate-[70deg] w-24 md:w-32"
+        className="absolute top-0 left-[-5.1vh] rotate-[75deg] w-[16vh] md:w-[24vh]"
       />
 
       {/* SVG hojitas derecha */}
       <Image
         src={hojitasIcon}
         alt="decoración"
-        className="absolute top-12 right-[3.8vh] w-24 md:w-32 transform "
+        className="absolute top-12 right-[-3vh] rotate-[-10deg] w-[16vh] md:w-[24vh] transform "
       />
 
       <motion.div

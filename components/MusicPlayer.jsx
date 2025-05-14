@@ -30,7 +30,7 @@ const MusicPlayer = () => {
   }, []);
 
   return (
-    <div className="fixed top-5 right-4 z-50 flex items-center space-x-2">
+    <div className="fixed top-5 right-10 z-50 flex items-center space-x-2">
       {/* Audio oculto */}
       <audio ref={audioRef} src="/song.mp3" preload="auto"></audio>
 

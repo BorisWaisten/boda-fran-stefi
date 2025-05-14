@@ -8,7 +8,6 @@ const Header = () => {
   return (
     <header className="relative overflow-hidden">
       <div className="relative w-full h-[100vw] md:h-[80vw] lg:h-[70vw]">
-        {/* Imagen de fondo */}
         <Image
           src="/fondo.jpg"
           alt="header"
@@ -17,13 +16,11 @@ const Header = () => {
           objectPosition="center"
           quality={100}
           priority={true}
-          className="w-full h-full filter grayscale"
+          className=" w-full h-full filter grayscale"
         />
 
-        {/* Contenido superpuesto */}
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white z-10">
 
-          {/* Curva de texto */}
           <motion.svg
             viewBox="0 0 500 200"
             initial={{ opacity: 0, y: -30 }}
@@ -50,7 +47,6 @@ const Header = () => {
             </text>
           </motion.svg>
 
-          {/* Nombres */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -68,7 +64,6 @@ const Header = () => {
             </h1>
           </motion.div>
 
-          {/* Fecha */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -79,13 +74,11 @@ const Header = () => {
           </motion.p>
         </div>
 
-        {/* Papel rasgado */}
-        <motion.img
+        <Image
           src="/papelrasgado.svg"
           alt="borde rasgado"
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1.5, ease: 'easeOut', delay: 1.3 }}
+          width={500}
+          height={100}
           className="absolute top-[58%] lg:top-[40%] w-full h-auto z-20 pointer-events-none"
         />
       </div>

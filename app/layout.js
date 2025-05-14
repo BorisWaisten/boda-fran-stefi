@@ -19,7 +19,7 @@ export const layourMetadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" translate="no">
-      <body className= {`text-black`} >{children}</body>
+      <body className= {`text-black overflow-x-hidden`} >{children}</body>
     </html>
   );
 }

@@ -51,7 +51,7 @@ const informacion = [
 
 
             <button
-              className="mt-4 bg-black text-primary font-centuryBold py-2 px-6 rounded-full shadow-md hover:bg-primary transition-colors"
+              className="mt-4 bg-black text-primary font-centuryBold py-2 px-6 rounded-full shadow-md hover:bg-primary hover:text-black transition-colors"
               onClick={() => window.open(evento.address)}
             >
               CÓMO LLEGAR

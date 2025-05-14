@@ -68,8 +68,8 @@ const Carousel = () => {
 
   return (
     <section className="bg-primary py-8">
-      <Image src ={"./papelrasgado.svg"} alt="Wedding" width={500} height={100} className="  md:w-[200vh]  md:h-[100vh]  scale-x-150 rotate-180 absolute md:top-[-59%] md:left-[50vh] z-[0]" />
-      <div className="container mx-auto">
+      <Image src ={"./papelrasgado.svg"} alt="Wedding" width={500} height={100} className=" top-[-20vh] left-[2vh] h-[34vh] scale-125  md:w-[200vh]  md:h-[100vh]  md:scale-x-150 rotate-180 absolute md:top-[-58%] md:left-[50vh] z-[0] pointer-events-none" />
+      <div className="container md:my-5 mx-auto">
         <div className="grid grid-cols-1 items-center justify-center text-center">
           <Image src={iconSvg} alt="Wedding" className="w-20 h-20 mx-auto" />
           <h2 className={`font-retro text-3xl md:text-4xl text-white mb-8`}>
@@ -153,7 +153,7 @@ const Carousel = () => {
           ))}
         </div>
       </div>
-      <Image src ={"./papelrasgado.svg"} alt="Wedding" width={500} height={100} className="  md:w-[200vh]  md:h-[100vh]  scale-x-150  absolute md:bottom-[-60%] md:right-[50vh] z-[0]" />
+      <Image src ={"./papelrasgado.svg"} alt="Wedding" width={500} height={100} className=" top-[75vh] right-[2vh] h-[34vh] scale-125 md:w-full  md:h-[100vh]  md:scale-x-150  absolute md:top-[58%] md:right-[40vh]  z-[0] pointer-events-none" />
     </section>
   );
 };

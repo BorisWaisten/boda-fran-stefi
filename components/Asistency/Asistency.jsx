@@ -11,19 +11,19 @@ const Asistency = () => {
   };
 
   return (
-    <section id="asistency" className="bg-secondary min-h-screen flex items-center justify-center">
-      <div className="container bg-terciary rounded-xl shadow-2xl p-8 m-10 mx-4 w-full sm:w-auto">
+    <section id="asistency" className="bg-primary min-h-screen flex items-center justify-center">
+      <div className="container bg-white rounded-xl shadow-2xl p-8 m-10 mx-4 w-full sm:w-auto">
         <div className='grid grid-cols-2 gap-4 flex justify-center'>
           <button
             type="button"
-            className={`p-2 font-sans font-bold rounded-lg shadow-md`}
+            className={`p-2 font-sans font-bold rounded-lg hover:bg-secondary hover:text-white shadow-md`}
             onClick={handleRedirect}
           >
             Confirmar Asistencia
           </button>
           <button
             type="button"
-            className="font-bold font-sans rounded-lg shadow-md"
+            className="font-bold font-sans hover:bg-secondary hover:text-white rounded-lg shadow-md"
             onClick={() => router.push('/#asistency')}
           >
             Volver

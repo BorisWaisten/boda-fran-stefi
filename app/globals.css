@@ -5,9 +5,9 @@
 @layer base {
     :root {
         /* For rgb(255 115 179 / <alpha-value>) */
-        --color-primary: 253,185,19;
+        --color-primary: 181 137 52; /* ✅ correcto para Tailwind */
         --color-secondary: 0 0 0;
-        --color-text-primary:253,185,19;
+        --color-text-primary: 181 137 52; /* ✅ correcto para Tailwind */
         --color-text-secondary: 0 0 0;
 
     }

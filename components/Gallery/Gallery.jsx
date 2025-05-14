@@ -67,7 +67,7 @@ const Carousel = () => {
   };
 
   return (
-    <section className="bg-[#FDB913] py-8">
+    <section className="bg-primary py-8">
       <Image src ={"./papelrasgado.svg"} alt="Wedding" width={500} height={100} className="  md:w-[200vh]  md:h-[100vh]  scale-x-150 rotate-180 absolute md:top-[-59%] md:left-[50vh] z-[0]" />
       <div className="container mx-auto">
         <div className="grid grid-cols-1 items-center justify-center text-center">

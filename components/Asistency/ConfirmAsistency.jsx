@@ -1,13 +1,14 @@
 'use client'
 
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function ConfirmarAsistencia() {
     const router = useRouter();
     return (
       <div className=" text-center py-10">
         <div className="flex justify-center ">
-          <img className="w-1/6 mb-5" src="/confirmacion.gif" alt="" />
+          <Image width={100} height={100}  className="w-1/6 mb-5" src="/confirmacion.gif" alt="" />
         </div>
         <h2 className= {` text-secondary  text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 `}>
           CONFIRMACIÓN DE ASISTENCIA

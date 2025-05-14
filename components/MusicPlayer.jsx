@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState, useRef, useEffect } from 'react';
 
 const MusicPlayer = () => {
@@ -38,7 +39,9 @@ const MusicPlayer = () => {
         onClick={togglePlay}
         className={`relative p-1 bg-primary rounded-full transition-all duration-300 ${isPlaying ? 'animate-shadow-expand' : ''}`}
       >
-        <img
+        <Image
+          width={100}
+          height={100}
           src="/reproduccion.svg"
           alt="Botón de música"
           className={`w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 ${isPlaying ? 'animate-jump' : ''}`}

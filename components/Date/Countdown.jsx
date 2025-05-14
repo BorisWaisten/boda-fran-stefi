@@ -44,10 +44,10 @@ export default function Countdown() {
 
   const timerComponents = Object.keys(timeLeft).map((interval) => (
     <div key={interval} className="w-[4rem] sm:w-[7rem] md:w-[8rem] lg:w-[7rem] text-start font-centuryBold mx-2">
-      <span className="block  sm:text-3xl md:text-4xl lg:text-2xl text-[#FDB913]">
+      <span className="block  sm:text-3xl md:text-4xl lg:text-2xl text-primary">
         {timeLeft[interval]}
       </span>
-      <span className="block  sm:text-lg md:text-xl lg:text-2xl text-[#FDB913]">
+      <span className="block  sm:text-lg md:text-xl lg:text-2xl text-primary">
         {interval}
       </span>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { cilCalendar } from '@coreui/icons';
 import CIcon from '@coreui/icons-react';
+import Image from 'next/image';
 export default function ScheduleEvent() {
 
   const evento ={
@@ -46,7 +47,7 @@ export default function ScheduleEvent() {
         onClick={() => window.open(googleCalendarLink, '_blank')}
       >
         
-        <img className='pr-1 pb-1 sm:pb-2 sm:pr-2 md:pb-2 lg:pb-2 h-[5vh] sm:h-[10vh] md:h-[10vh] lg:h-[10vh] ' src="/agenda.svg" alt="" />
+        <Image width={100} height={100} className='pr-1 pb-1 sm:pb-2 sm:pr-2 md:pb-2 lg:pb-2 h-[5vh] sm:h-[10vh] md:h-[10vh] lg:h-[10vh] ' src="/agenda.svg" alt="" />
         <span className=' pr-1 lg:pr-2 text-[11px] sm:text-sm md:text-base lg:text-lg'>AGENDAR LA FECHA</span>
       </button>
    </div>

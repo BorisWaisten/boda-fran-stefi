@@ -17,10 +17,10 @@ export const metadata = {
   openGraph: {
     images: [
       {
-        url: 'https://martuygino.vercel.app/imagenPortada.jpg', 
+        url: 'https://boda-syd.vercel.app/fondo.jpg', 
         width: 1200,
         height: 630,
-        alt: 'Imagen representativa de la boda de M&G',
+        alt: 'Imagen representativa de la boda de S&D',
       },
     ],
     }

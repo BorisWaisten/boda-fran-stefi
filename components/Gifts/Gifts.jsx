@@ -7,8 +7,8 @@ export default function Regalos() {
     const router = useRouter();
     return (
       <section 
-        className="bg-primary h-[40vh] md:h-screen text-white text-center w-full overflow-hidden">
-          <Image src ={"./papeldos.svg"} alt="Wedding" width={500} height={100} className="relative w-full top-[-10vh] sm:top-[-37vh]   scale-x-110   md:top-[-72vh]  z-[0] pointer-events-none" />
+        className="bg-primary h-[40vh] md:h-screen text-white text-center w-full">
+          <Image src ={"./papeldos.svg"} alt="Wedding" width={500} height={100} className="relative w-full top-[-10vh] sm:top-[-37vh]   scale-x-110   md:top-[-72vh]  pointer-events-none" />
 
           <motion.div 
           initial={{ opacity: 0, y: 60 }}

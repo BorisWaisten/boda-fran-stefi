@@ -40,14 +40,22 @@ const Lodging = () => {
       <Image
         src={hojitasIcon}
         alt="decoración"
-        className="absolute top-0 left-[-5.1vh] rotate-[75deg] w-[16vh] md:w-[24vh]"
+        className="absolute top-0 left-[-5.1vh] rotate-[75deg] w-[16vh] sm:w-[25vh] sm:left-[-6%] md:left-[-3.9%] md:w-[30vh]"
+      />
+      
+      <Image
+        src="/trama.svg"
+        alt="Decoración"
+        width={1920}
+        height={200}
+        className="absolute top-[15%] right-[35%] w-full scale-110 sm:scale-[.35] sm:right-[40%] sm:top-[5%] md:scale-[.28] md:top-[-40%] md:left-[-25%]  z-[0] pointer-events-none "
       />
 
       {/* SVG hojitas derecha */}
       <Image
         src={hojitasIcon}
         alt="decoración"
-        className="absolute top-12 right-[-3vh] rotate-[-10deg] w-[16vh] md:w-[24vh] transform "
+        className="absolute top-12 right-[-3vh] rotate-[-10deg] w-[16vh] sm:right-[1.5%] sm:w-[25vh] md:right-[3.9%] md:w-[30vh] transform "
       />
 
       <motion.div
@@ -71,7 +79,7 @@ const Lodging = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-4xl mx-auto px-6 mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-2 max-w-4xl mx-auto px-6 mt-6">
           {hospedajes.map((hotel, index) => (
             <motion.div
               key={index}

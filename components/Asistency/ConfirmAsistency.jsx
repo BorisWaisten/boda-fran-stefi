@@ -19,11 +19,11 @@ export default function ConfirmarAsistencia() {
       left-[-18%]  /* 10% hacia la izquierda (queda medio salida) */
     rotate-[75deg]
     w-[50%]       /* 50% del ancho del contenedor */
-    sm:top-[15%]  /* en sm y superior: 15% */
-    sm:left-[-8%] /* en sm y superior: 8% */
+    sm:top-[29%]  /* en sm y superior: 15% */
+    sm:left-[-14%] /* en sm y superior: 8% */
     sm:w-[40%]    /* en sm y superior: 40% */
-    md:top-[10%]
-    md:left-[-6%]
+    md:top-[3%]
+    md:left-[-10%]
     md:w-[30%]
     pointer-events-none
   "

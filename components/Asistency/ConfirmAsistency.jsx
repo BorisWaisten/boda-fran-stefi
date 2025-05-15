@@ -13,7 +13,7 @@ export default function ConfirmarAsistencia() {
         height={100}
         src='/hojitablanca.svg'
         alt="decoración"
-        className="absolute top-[16.5vh] right-[33.5vh] rotate-[75deg] w-[20vh] sm:w-[40vh] sm:left-[-13vh] sm:top-[17vh] md:w-[50vh] md:top-[15vh] md:left-[-16vh] sm:rotate-[78deg] pointer-events-none"
+        className="absolute top-[33.5vw] left-[-15.5vw] rotate-[75deg] w-[20vh] sm:w-[40vh] sm:left-[-13vh] sm:top-[17vh] md:w-[50vh] md:top-[15vh] md:left-[-16vh] sm:rotate-[78deg] pointer-events-none"
       />
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -32,7 +32,7 @@ export default function Regalos() {
                 MÁS INFORMACIÓN
           </button>
           </motion.div>
-          <Image src ={"./papeldos.svg"} alt="Wedding" width={500} height={100} className="relative  w-full top-[-15vh] rotate-180 sm:top-[-66vh]    scale-x-110  md:top-[-110vh]    z-[0] pointer-events-none"  />         
+          <Image src ={"./papeldos.svg"} alt="Wedding" width={500} height={100} className="relative  w-full top-[-35vw] rotate-180 sm:top-[-66vh]    scale-x-110  md:top-[-110vh]    z-[0] pointer-events-none"  />         
       </section>
     );
   }

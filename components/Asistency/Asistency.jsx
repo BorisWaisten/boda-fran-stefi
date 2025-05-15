@@ -1,7 +1,6 @@
 'use client'
 import React from 'react';
 import { useRouter } from 'next/navigation';
-
 const Asistency = () => {
   const router = useRouter();
 
@@ -11,9 +10,10 @@ const Asistency = () => {
   };
 
   return (
-    <section id="asistency" className="bg-primary min-h-screen flex items-center justify-center">
+    <section id="asistency" className=" bg-primary min-h-screen flex items-center justify-center">
+
       <div className="container bg-white rounded-xl shadow-2xl p-8 m-10 mx-4 w-full sm:w-auto">
-        <div className='grid grid-cols-2 gap-4 flex justify-center'>
+        <div className='grid grid-cols-2 gap-4  justify-center'>
           <button
             type="button"
             className={`p-2 font-sans font-bold rounded-lg hover:bg-secondary hover:text-white shadow-md`}

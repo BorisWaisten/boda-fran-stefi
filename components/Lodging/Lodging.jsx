@@ -56,7 +56,7 @@ const Lodging = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <h3 className="font-retro text-4xl md:text-2xl text-black italic mb-2">
+        <h3 className="font-retro text-5xl md:text-6xl text-black italic mb-2 md:pb-8">
           luego de la fiesta
         </h3>
 
@@ -64,9 +64,9 @@ const Lodging = () => {
           <Image
             src={hospedajeIcon}
             alt="Icono hospedaje"
-            className="w-full h-[5vh] scale-[3.5] d:w-14 mx-auto"
+            className="w-full h-[7vh] scale-[3.5] sm:h-[10vh] mx-auto"
           />
-          <h2 className="text-primary font-centuryBold text-2xl md:text-4xl uppercase mt-2">
+          <h2 className="text-primary font-centuryBold text-2xl md:text-4xl uppercase sm:mt-2">
             ¡Hospedaje!
           </h2>
         </div>

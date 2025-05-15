@@ -16,7 +16,7 @@ const Header = () => {
           objectPosition="center"
           quality={100}
           priority={true}
-          className=" w-full h-full filter grayscale"
+          className="w-full h-full filter grayscale"
         />
 
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white z-10">
@@ -75,11 +75,11 @@ const Header = () => {
         </div>
 
         <Image
-          src="/papelrasgado.svg"
+          src="/papeldos.svg"
           alt="borde rasgado"
           width={500}
           height={100}
-          className="absolute top-[58%] lg:top-[40%] w-full h-auto z-20 pointer-events-none"
+          className="relative top-[82.5%] scale-110 sm:top-[80%] md:top-[75%] rotate-180 w-full  z-20 pointer-events-none"
         />
       </div>
     </header>

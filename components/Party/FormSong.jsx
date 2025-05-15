@@ -18,9 +18,9 @@ export default function SongComponentPage() {
   };
 
   return (
-    <main className="min-h-screen m-0 bg-secondary flex flex-col items-center justify-center">
-      <section className="m-10 w-full sm:w-auto bg-terciary rounded-xl shadow-2xl p-10">
-        <div className="grid grid-cols-2 gap-4 flex justify-center">
+    <main className="min-h-screen m-0 bg-primary text-secondary flex flex-col items-center justify-center">
+      <section className="m-10 w-full sm:w-auto bg-white rounded-xl shadow-2xl p-10">
+        <div className="grid grid-cols-2 gap-4 justify-center">
           <button
             type="button"
             className="p-2 font-sans font-bold rounded-lg shadow-md"

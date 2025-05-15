@@ -9,12 +9,26 @@ export default function ConfirmarAsistencia() {
     return (
       <div className="relative text-center font-centuryItalic text-white bg-primary py-10 overflow-hidden">
       <Image
-        width={100}
-        height={100}
-        src='/hojitablanca.svg'
-        alt="decoración"
-        className="absolute top-[33.5vw] left-[-15.5vw] rotate-[75deg] w-[20vh] sm:w-[40vh] sm:left-[-13vh] sm:top-[17vh] md:w-[50vh] md:top-[15vh] md:left-[-16vh] sm:rotate-[78deg] pointer-events-none"
-      />
+  src="/hojitablanca.svg"
+  alt="decoración"
+  width={100}
+  height={100}
+  className="
+    absolute
+      top-[45%]    /* 25% desde la parte superior del contenedor */
+      left-[-18%]  /* 10% hacia la izquierda (queda medio salida) */
+    rotate-[75deg]
+    w-[50%]       /* 50% del ancho del contenedor */
+    sm:top-[15%]  /* en sm y superior: 15% */
+    sm:left-[-8%] /* en sm y superior: 8% */
+    sm:w-[40%]    /* en sm y superior: 40% */
+    md:top-[10%]
+    md:left-[-6%]
+    md:w-[30%]
+    pointer-events-none
+  "
+/>
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

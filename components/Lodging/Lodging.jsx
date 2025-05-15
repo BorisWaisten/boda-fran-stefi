@@ -42,6 +42,12 @@ const Lodging = () => {
         alt="decoración"
         className="absolute top-0 left-[-5.1vh] rotate-[75deg] w-[16vh] sm:w-[25vh] sm:left-[-6%] md:left-[-3.9%] md:w-[30vh]"
       />
+
+            <Image
+        src={hojitasIcon}
+        alt="decoración"
+        className="absolute top-12 right-[-3vh] rotate-[-10deg] w-[16vh] sm:right-[1.5%] sm:w-[25vh] md:right-[3.9%] md:w-[30vh] transform "
+      />
       
       <Image
         src="/trama.svg"
@@ -51,12 +57,18 @@ const Lodging = () => {
         className="absolute top-[15%] right-[35%] w-full scale-110 sm:scale-[.35] sm:right-[40%] sm:top-[5%] md:scale-[.28] md:top-[-40%] md:left-[-25%]  z-[0] pointer-events-none "
       />
 
-      {/* SVG hojitas derecha */}
-      <Image
-        src={hojitasIcon}
-        alt="decoración"
-        className="absolute top-12 right-[-3vh] rotate-[-10deg] w-[16vh] sm:right-[1.5%] sm:w-[25vh] md:right-[3.9%] md:w-[30vh] transform "
-      />
+    <Image
+      src="/trama.svg"
+      alt="Decoración trama derecha"
+      width={1920}
+      height={200}
+      className="
+        block sm:hidden
+        absolute top-[59%] right-[-35%]
+        w-full scale-110
+        pointer-events-none z-0
+      "
+    />
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}

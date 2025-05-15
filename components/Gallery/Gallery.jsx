@@ -15,7 +15,7 @@ export default function Gallery() {
         alt="Decoración"
         width={1920}
         height={200}
-        className="absolute top-[-15vw] w-full scale-110 sm:top-[-37.5vh] md:top-[-77vh] z-[0] pointer-events-none "
+        className="absolute top-[-25vw] w-full scale-110 sm:top-[-37.5vh] md:top-[-77vh] z-[0] pointer-events-none "
       />
       
       {/* <motion.div

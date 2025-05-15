@@ -52,7 +52,7 @@ const Invitation = () => {
   ];
 
   return (
-    <section className="relative py-10 bg-white z-20 text-center md:mt-14 ">
+    <section className="relative z-10 bg-white text-center md:mt-14 ">
       <div className="grid grid-cols-1 mx-auto  md:grid-cols-2 gap-10 md:gap-0 max-w-5xl  ">
         {informacion.map((evento, index) => (
           <motion.div

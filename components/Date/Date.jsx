@@ -12,13 +12,13 @@ export default function Date() {
       </div>
 
       {/* Fecha */}
-      <div className="border-y border-[rgb(253,185,19)] py-1 md:py-2 w-[45%] sm:w-[35%] md:w-[16%] max-w-[600px]">
-        <div className="flex justify-center items-center gap-2  text-black font-retro text-xl sm:text-2xl md:text-3xl">
-          <span className="text-[2rem] sm:text-[2.5rem] md:text-[3rem]">15</span>
-          <span className="text-primary font-centuryBold text-xl md:text-2xl">•</span>
-          <span className="italic text-[2rem] sm:text-[2.5rem] md:text-[3rem]">Noviembre</span>
-          <span className="text-primary font-centuryBold text-xl md:text-2xl">•</span>
-          <span className="text-[2rem] sm:text-[2.5rem] md:text-[3rem]">2025</span>
+      <div className="border-y border-[rgb(181,137,52)] py-2 md:py-4 w-[55%] sm:w-[42%] md:w-[22%] max-w-[600px]">
+        <div className="flex justify-center items-center gap-2 text-black font-retro text-2xl sm:text-4xl md:text-6xl">
+          <span className="text-[2.5rem] sm:text-[4rem] md:text-[5rem]">15</span>
+          <span className="text-primary font-centuryBold text-2xl md:text-4xl">•</span>
+          <span className="italic text-[2.5rem] sm:text-[4rem] md:text-[5rem]">Noviembre</span>
+          <span className="text-primary font-centuryBold text-2xl md:text-4xl">•</span>
+          <span className="text-[2.5rem] sm:text-[4rem] md:text-[5rem]">2025</span>
         </div>
       </div>
 

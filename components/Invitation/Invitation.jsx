@@ -52,7 +52,9 @@ const Invitation = () => {
   ];
 
   return (
-    <section className="relative z-10 bg-white text-center md:mt-14 ">
+    <section className="relative z-10 text-center mt-10 md:mt-14 ">
+      
+      
       <div className="grid grid-cols-1 mx-auto  md:grid-cols-2 gap-10 md:gap-0 max-w-5xl  ">
         {informacion.map((evento, index) => (
           <motion.div
@@ -64,7 +66,7 @@ const Invitation = () => {
             transition={{ duration: 0.8, delay: index * 0.2 }}
           >
             <div
-              className="bg-black rounded-full p-4 w-20 h-20 md:w-24 md:h-24 flex items-center justify-center mb-4"
+              className="relative overflow-hidden bg-gradient-to-r from-[#e6c976] via-[#C4A24D] to-[#8f7537] rounded-full p-4 w-20 h-20 md:w-24 md:h-24 flex items-center justify-center mb-4 shadow-lg group"
             >
               <motion.img
                 animate={evento.iconAnimation.animate}
@@ -73,25 +75,27 @@ const Invitation = () => {
                 height={100}
                 src={evento.icon}
                 alt={evento.title}
-                className="w-10 h-10 scale-[3]"
+                className="w-10 h-10 scale-[3] relative z-10"
               />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent group-hover:via-white/30 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-out"></div>
             </div>
 
             <h3 className="text-primary font-centuryBold text-xl md:text-2xl  uppercase">{evento.title}</h3>
-            <p className="font-centuryBold w-[25%]  md:text-xl mt-2">{evento.day} |{evento.time}|</p>
+            <p className="font-centuryBold text-primary w-[25%]  md:text-xl mt-2">{evento.day} |{evento.time}|</p>
 
             <p className="font-retro text-primary text-4xl md:text-6xl ">{evento.place}</p>
 
             <div className='flex flex-col w-full gap-2'>
-              <p className="text-black mx-auto text-sm md:text-lg font-centuryBold">{evento.street}</p>
-              <p className="text-black mx-auto text-sm md:text-lg font-centuryBold">{evento.location}</p>
+              <p className="text-primary mx-auto text-sm md:text-lg font-centuryBold">{evento.street}</p>
+              <p className="text-primary mx-auto text-sm md:text-lg font-centuryBold">{evento.location}</p>
             </div>
 
             <button
-              className="mt-4 bg-black text-primary font-centuryBold py-2 px-6 rounded-full shadow-md hover:bg-primary hover:text-black transition-colors"
+              className="relative overflow-hidden text-white bg-gradient-to-r from-[#e6c976] via-[#C4A24D] to-[#8f7537] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#C4A24D]/50 font-centuryBold rounded-full text-sm md:text-lg lg:text-xl px-8 py-3 text-center uppercase tracking-wider shadow-lg group mt-4"
               onClick={() => window.open(evento.address)}
             >
-              CÓMO LLEGAR
+              <span className="relative z-10">Cómo Llegar</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent group-hover:via-white/30 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-out"></div>
             </button>
           </motion.div>
         ))}

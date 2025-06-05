@@ -43,20 +43,24 @@ export default function Countdown() {
   const isWeddingDay = timeLeft.DIAS === '000' && timeLeft.HORAS === '00' && timeLeft.MINUTOS === '00';
 
   const timerComponents = Object.keys(timeLeft).map((interval) => (
-    <div key={interval} className="w-[4rem] sm:w-[7rem] md:w-[8rem] lg:w-[7rem] text-center font-centuryBold mx-2">
-      <span className="block  sm:text-3xl md:text-4xl lg:text-2xl text-primary">
+    <div 
+      key={interval} 
+      className="relative text-black overflow-hidden bg-gradient-to-r from-[#e6c976] via-[#C4A24D] to-[#8f7537] rounded-lg py-2 w-[5rem] sm:w-[7rem] md:w-[8rem] lg:w-[7rem] text-center font-centuryBold mx-2 shadow-lg group"
+    >
+      <span className="block sm:text-3xl lg:text-2xl ">
         {timeLeft[interval]}
       </span>
-      <span className="block  sm:text-lg md:text-xl lg:text-2xl text-primary">
+      <span className="block sm:text-lg md:text-xl lg:text-2xl ">
         {interval}
       </span>
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-out"></div>
     </div>
   ));
 
   return (
     <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4">
       {isWeddingDay ? (
-        <span className="text-2xl text-gray-700">¡Es el día de la boda!</span>
+        <span className="text-2xl text-primary">¡Es el día de la boda!</span>
       ) : (
         timerComponents
       )}

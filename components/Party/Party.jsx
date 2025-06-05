@@ -4,6 +4,7 @@ import { motion, time } from 'framer-motion';
 import '../components.css';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import hojitasIcon from '@/public/hojitas.svg'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -45,12 +46,26 @@ const Party = () => {
 
   return (
     <motion.div
-      className="relative text-primary z-20 container  mt-1 text-center mx-auto"
+      className="relative text-primary z-20 mb-10 container  mt-1 text-center mx-auto"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       transition={{ staggerChildren: 0.3 }}
     >
+
+      <Image
+        src={hojitasIcon}
+        alt="decoración"
+        className="absolute top-[-10vh] left-[-5.1vh] rotate-[75deg] w-[16vh] sm:w-[25vh] sm:left-[-7vh] md:left-[-6vh] md:w-[20vh] md:left-[-10vh] lg:w-[25vh] lg:left-[-7vh] xl:w-[35vh] xl:left-[-20vh] "
+      />
+
+            <Image
+        src={hojitasIcon}
+        alt="decoración"
+        className="absolute top-14 right-[-3.5vh] rotate-[-10deg] w-[16vh] sm:right-[-5vh] sm:w-[25vh]  md:right-[-4vh] md:w-[20vh] lg:w-[25vh] lg:right-[-5vh] xl:right-[-16.5vh] transform "
+      />
+
+
       <motion.h2
         className="text-2xl md:text-3xl lg:text-5xl text-primary font-centuryBold "
         variants={fadeInUp}
@@ -59,7 +74,7 @@ const Party = () => {
       </motion.h2>
 
       <motion.h3
-        className="font-retro text-secondary italic text-4xl md:text-lg lg:text-4xl "
+        className="font-retro text-primary italic text-4xl md:text-lg lg:text-4xl "
         variants={fadeInUp}
       >
         ¡Algunos detalles a tener en cuenta!
@@ -89,9 +104,10 @@ const Party = () => {
 
           <button
             onClick={handleSongSuggestionClick}
-            className="bg-primary text-white font-centuryBold py-2 px-6 rounded-full shadow-md hover:bg-primary hover:text-black transition-colors"
+            className="relative overflow-hidden text-white bg-gradient-to-r from-[#e6c976] via-[#C4A24D] to-[#8f7537] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#C4A24D]/50 font-centuryBold rounded-full text-sm md:text-lg lg:text-xl px-8 py-3 text-center uppercase tracking-wider shadow-lg group"
           >
-            SUGERIR CANCIÓN
+            <span className="relative z-10">Sugerir Canción</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent group-hover:via-white/30 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-out"></div>
           </button>
         </motion.div>
 
@@ -115,9 +131,10 @@ const Party = () => {
           <p className="text-sm sm:text-lg font-century py-3">Formal - Elegante</p>
           <button
             onClick={() => router.push('/outfits')}
-            className=" bg-primary text-white font-centuryBold py-2 px-6 rounded-full shadow-md hover:bg-primary hover:text-black transition-colors"
+            className="relative overflow-hidden text-white bg-gradient-to-r from-[#e6c976] via-[#C4A24D] to-[#8f7537] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#C4A24D]/50 font-centuryBold rounded-full text-sm md:text-lg lg:text-xl px-8 py-3 text-center uppercase tracking-wider shadow-lg group"
           >
-            INSPIRATE
+            <span className="relative z-10">Inspirate</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent group-hover:via-white/30 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-out"></div>
           </button>
         </motion.div>
       </div>

@@ -11,11 +11,11 @@ export default function Gallery() {
   return (
     <section className="relative bg-primary md:py-8 h-[75vh] md:h-screen flex items-center justify-center">
       <Image
-        src="/papeldos.svg"
+        src="/papelrasgadoblack.svg"
         alt="Decoración"
         width={1920}
         height={200}
-        className="absolute top-[-25vw] w-full scale-110 sm:top-[-37.5vh] md:top-[-77vh] z-[0] pointer-events-none "
+        className="absolute top-[-15vh] w-full scale-110 sm:top-[-37.5vh] md:top-[-40vh] lg:top-[-60vh] xl:top-[-80vh] z-[0] pointer-events-none "
       />
       
       {/* <motion.div
@@ -44,11 +44,11 @@ export default function Gallery() {
 
       {/* SVG inferior decorativo */}
       <Image
-        src="/papeldos.svg"
+        src="/papelrasgadoblack.svg"
         alt="Decoración"
         width={1920}
         height={200}
-        className="top-[60vh] rotate-180  scale-110 w-full  absolute sm:top-[55vh] md:top-[60vh]  z-[0] pointer-events-none"
+        className="top-[45vh] rotate-180  scale-110 w-full  absolute sm:top-[50vh] md:top-[45vh] lg:top-[38vh] xl:top-[15vh] z-[0] pointer-events-none"
       />
     </section>
   );

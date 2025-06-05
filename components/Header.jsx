@@ -75,11 +75,11 @@ const Header = () => {
         </div>
 
         <Image
-          src="/papeldos.svg"
+          src="/papelrasgadoblack.svg"
           alt="borde rasgado"
           width={500}
           height={100}
-          className="relative top-[82.5%] scale-110 sm:top-[80%] md:top-[75%] rotate-180 w-full  z-20 pointer-events-none"
+          className="absolute w-full bottom-[-23vh] sm:bottom-[-30vh] md:bottom-[-40vh] lg:bottom-[-60vh] xl:bottom-[-80vh] scale-y-[-1] z-20 pointer-events-none"
         />
       </div>
     </header>

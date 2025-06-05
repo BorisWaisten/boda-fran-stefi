@@ -35,18 +35,18 @@ const hospedajes = [
 
 const Lodging = () => {
   return (
-    <section className="relative py-12 bg-white text-center overflow-hidden">
+    <section className="relative py-12 bg-black text-center overflow-hidden">
       {/* SVG hojitas izquierda */}
       <Image
         src={hojitasIcon}
         alt="decoración"
-        className="absolute top-0 left-[-5.1vh] rotate-[75deg] w-[16vh] sm:w-[25vh] sm:left-[-6%] md:left-[-3.9%] md:w-[30vh]"
+        className="absolute top-0 left-[-5.1vh] rotate-[75deg] w-[16vh] sm:w-[25vh] sm:left-[-7vh] md:left-[-9vh] md:w-[30vh] md:left-[-10vh] lg:w-[35vh] lg:left-[-10vh] xl:w-[35vh] xl:left-[-10vh] "
       />
 
             <Image
         src={hojitasIcon}
         alt="decoración"
-        className="absolute top-12 right-[-3vh] rotate-[-10deg] w-[16vh] sm:right-[1.5%] sm:w-[25vh] md:right-[3.9%] md:w-[30vh] transform "
+        className="absolute top-12 right-[-3vh] rotate-[-10deg] w-[16vh] sm:right-[-5vh] sm:w-[25vh]  md:w-[30vh] lg:w-[35vh] lg:rigth-[-9vh] md:right-[-7vh] xl:right-[-7vh] transform "
       />
       
       <Image
@@ -54,7 +54,7 @@ const Lodging = () => {
         alt="Decoración"
         width={1920}
         height={200}
-        className="absolute top-[15%] right-[35%] w-full scale-110 sm:scale-[.35] sm:right-[40%] sm:top-[5%] md:scale-[.28] md:top-[-40%] md:left-[-25%]  z-[0] pointer-events-none "
+        className="absolute top-[15%] right-[35%] w-full scale-110 sm:scale-[.5] sm:right-[42%] sm:top-[5%] md:scale-[.5] md:top-[10vh] lg:top-[-7vh] lg:right-[45vh] lg:scale-[.4] xl:top-[-30vh] xl:scale-[.3] xl:right-[50vh] z-[0] pointer-events-none "
       />
 
     <Image
@@ -76,7 +76,7 @@ const Lodging = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <h3 className="font-retro text-5xl md:text-6xl text-black italic mb-2 md:pb-8">
+        <h3 className="font-retro text-5xl md:text-6xl text-primary italic mb-2 md:pb-8">
           luego de la fiesta
         </h3>
 
@@ -104,12 +104,12 @@ const Lodging = () => {
               <h3 className="text-primary font-centuryBold text-xl md:text-2xl uppercase mb-1">
                 {hotel.nombre}
               </h3>
-              <p className="text-black font-centuryBold whitespace-pre-line mb-1">
+              <p className="text-primary font-centuryBold whitespace-pre-line mb-1">
                 {hotel.direccion}
               </p>
-              <p className="text-black font-centuryBold">{`tel: ${hotel.telefono}`}</p>
+              <p className="text-primary font-centuryBold">{`tel: ${hotel.telefono}`}</p>
               <button
-                className="mt-4 bg-black text-primary font-centuryBold py-2 px-6 rounded-full shadow-md hover:bg-primary hover:text-black transition-colors"
+                className="mt-4 bg-black text-primary font-centuryBold py-2 px-6 rounded-full shadow-md hover:bg-primary hover:text-primary transition-colors"
                 onClick={() => window.open(hotel.link)}
               >
                 CÓMO LLEGAR

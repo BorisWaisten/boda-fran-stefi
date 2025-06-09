@@ -15,7 +15,7 @@ export default function Gallery() {
         alt="Decoración"
         width={1920}
         height={200}
-        className="absolute top-[-15vh] w-full scale-110 sm:top-[-37.5vh] md:top-[-40vh] lg:top-[-60vh] xl:top-[-80vh] z-[0] pointer-events-none "
+        className="absolute top-[-17vh] w-full scale-110 sm:top-[-37.5vh] md:top-[-40vh] lg:top-[-60vh] xl:top-[-80vh] z-[0] pointer-events-none "
       />
       
       {/* <motion.div
@@ -48,7 +48,7 @@ export default function Gallery() {
         alt="Decoración"
         width={1920}
         height={200}
-        className="top-[45vh] rotate-180  scale-110 w-full  absolute sm:top-[50vh] md:top-[45vh] lg:top-[38vh] xl:top-[15vh] z-[0] pointer-events-none"
+        className="top-[35vh] rotate-180 h-[65vh] scale-110 w-full  absolute sm:top-[50vh] md:top-[45vh] lg:top-[38vh] xl:top-[15vh] z-[0] pointer-events-none"
       />
     </section>
   );

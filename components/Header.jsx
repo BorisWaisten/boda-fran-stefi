@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const Header = () => {
   return (
     <header className="relative overflow-hidden">
-      <div className="relative w-full h-[100vw] md:h-[80vw] lg:h-[70vw]">
+      <div className="relative w-full h-[80vh] md:h-[80vw] lg:h-[70vw]">
         <Image
           src="/fondo.jpg"
           alt="header"
@@ -79,7 +79,7 @@ const Header = () => {
           alt="borde rasgado"
           width={500}
           height={100}
-          className="absolute w-full bottom-[-23vh] sm:bottom-[-30vh] md:bottom-[-40vh] lg:bottom-[-60vh] xl:bottom-[-80vh] scale-y-[-1] z-20 pointer-events-none"
+          className="absolute w-full bottom-[-15vh] sm:bottom-[-30vh] md:bottom-[-40vh] lg:bottom-[-60vh] xl:bottom-[-80vh] scale-y-[-1] z-20 pointer-events-none"
         />
       </div>
     </header>

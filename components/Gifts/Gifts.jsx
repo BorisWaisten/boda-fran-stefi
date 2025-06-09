@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function Regalos() {
     const router = useRouter();
     return (
-      <section className="relative bg-primary md:h-[80vh] w-full  flex flex-col items-center">
+      <section className="relative bg-primary h-[65vh] md:h-[80vh] w-full  flex flex-col items-center">
         {/* Imagen superior */}
         <div className=" w-full h-auto relative">
           <Image 
@@ -14,7 +14,7 @@ export default function Regalos() {
             alt="Wedding" 
             width={500} 
             height={100}
-            className="w-full scale-x-110 absolute bottom-[-23vh] md:bottom-[-50vh] lg:bottom-[-60vh] xl:bottom-[-84vh] pointer-events-none translate-y-1"
+            className="w-full scale-x-110 absolute h-[65vh] bottom-[-37vh] md:bottom-[-50vh] lg:bottom-[-60vh] xl:bottom-[-84vh] pointer-events-none translate-y-1"
           />
         </div>
 
@@ -23,7 +23,7 @@ export default function Regalos() {
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-          className="flex flex-col  md:absolute md:top-[15vh]  items-center text-white px-4 py-8 z-10"
+          className="flex flex-col  md:absolute md:top-[15vh]  items-center text-white px-4 py-[12vh] sm:py-0 z-10"
         >
           <Image 
             width={100} 
@@ -58,7 +58,7 @@ export default function Regalos() {
             alt="Wedding" 
             width={500} 
             height={100} 
-            className="w-full scale-x-110 rotate-180 absolute top-[-23vh] md:top-[-50vh] lg:top-[-60vh] xl:top-[-82vh] -translate-y-1"
+            className="w-full scale-x-110 rotate-180 absolute h-[65vh] top-[-37vh] md:top-[-50vh] lg:top-[-60vh] xl:top-[-82vh] -translate-y-1"
           />
         </div>
       </section>

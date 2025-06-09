@@ -14,7 +14,7 @@ export default function Regalos() {
             alt="Wedding" 
             width={500} 
             height={100}
-            className="w-full scale-x-110 absolute h-[65vh] bottom-[-37vh] md:bottom-[-50vh] lg:bottom-[-60vh] xl:bottom-[-84vh] pointer-events-none translate-y-1"
+            className="w-full scale-x-110 absolute h-[65vh] bottom-[-37vh] sm:h-auto md:bottom-[-50vh] lg:bottom-[-60vh] xl:bottom-[-84vh] pointer-events-none translate-y-1"
           />
         </div>
 
@@ -58,7 +58,7 @@ export default function Regalos() {
             alt="Wedding" 
             width={500} 
             height={100} 
-            className="w-full scale-x-110 rotate-180 absolute h-[65vh] top-[-37vh] md:top-[-50vh] lg:top-[-60vh] xl:top-[-82vh] -translate-y-1"
+            className="w-full scale-x-110 rotate-180 absolute h-[65vh] sm:h-auto top-[-37vh] md:top-[-50vh] lg:top-[-60vh] xl:top-[-82vh] -translate-y-1"
           />
         </div>
       </section>

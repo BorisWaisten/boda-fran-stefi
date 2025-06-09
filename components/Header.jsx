@@ -79,7 +79,7 @@ const Header = () => {
           alt="borde rasgado"
           width={500}
           height={100}
-          className="absolute w-full h-[65vh] bottom-[-26vh] sm:bottom-[-30vh] md:bottom-[-40vh] lg:bottom-[-60vh] xl:bottom-[-80vh] scale-y-[-1] z-20 pointer-events-none"
+          className="absolute w-full h-[65vh] sm:h-auto bottom-[-26vh] sm:bottom-[-30vh] md:bottom-[-40vh] lg:bottom-[-60vh] xl:bottom-[-80vh] scale-y-[-1] z-20 pointer-events-none"
         />
       </div>
     </header>

@@ -24,6 +24,7 @@ export default function Outfits() {
         <h1 className="text-3xl sm:text-4xl font-bold mb-6">
           Catálogo de Vestimenta
         </h1>
+        <p className="text-sm sm:text-lg font-century py-3">Solo la novia va de blanco</p>
         <button
           onClick={() => router.push('/#party')}
           className="inline-flex items-center bg-primary text-white py-2 px-4 rounded-full shadow-lg hover:bg-secondary transition-colors mx-auto sm:absolute sm:left-0 sm:top-1/2 sm:transform sm:-translate-y-1/2"

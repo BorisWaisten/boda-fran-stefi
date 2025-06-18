@@ -7,9 +7,9 @@ import { motion } from 'framer-motion';
 const Header = () => {
   return (
     <header className="relative overflow-hidden">
-      <div className="relative w-full h-[80vh] md:h-[80vw] lg:h-[70vw]">
+      <div className="relative w-full h-[80vh] sm:h-[80vh] md:h-[120vh] lg:h-[1200px]">
         <Image
-          src="/fondo.jpg"
+          src="/S&D-1.jpg"
           alt="header"
           layout="fill"
           objectFit="cover"
@@ -21,45 +21,19 @@ const Header = () => {
 
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white z-10">
 
-          <motion.svg
-            viewBox="0 0 500 200"
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: 'easeOut' }}
-            className="
-              w-[25vh] h-[10vh]
-              sm:w-[30vh] sm:h-[15vh]
-              md:w-[30vh] md:h-[15vh]
-              lg:w-[20vw] lg:h-auto
-              mt-16
-            "
-          >
-            <path id="curve" d="M 50 160 Q 250 -50 450 160" fill="transparent" />
-            <text width="500">
-              <textPath
-                xlinkHref="#curve"
-                startOffset="50%"
-                textAnchor="middle"
-                className="fill-white text-[4rem] md:text-[4rem] lg:text-[4.2rem] font-century"
-              >
-                ¡Nos Casamos!
-              </textPath>
-            </text>
-          </motion.svg>
-
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, ease: 'easeOut', delay: 0.5 }}
             className="relative w-full h-[10rem] md:h-[14rem]"
           >
-            <h1 className="absolute left-[20%] top-[-2rem] sm:text-[8rem] sm:top-[-3rem] sm:left-[30%] md:left-[20%] lg:left-[33%] lg:top-[-6rem] lg:text-[15rem] md:top-0 text-[6rem] md:text-[5.8rem] font-retro">
+            <h1 className="absolute left-[20%] top-[-2rem] sm:text-[8rem] sm:top-[-3rem] sm:left-[30%] md:left-[29%] lg:left-[28%] lg:top-[-6rem] lg:text-[15rem] md:top-[-1.5rem] text-[6rem] md:text-[10rem] font-retro">
               Shirley
             </h1>
-            <span className="absolute left-[32%] top-[3.8rem] sm:left-[38%] sm:top-[5rem] md:left-[47%] lg:left-[40%] lg:top-[8.5rem] lg:text-[4rem] md:top-[2.4rem] text-[2.2rem] md:text-[2.8rem] font-century">
+            <span className="absolute left-[32%] top-[3.8rem] sm:left-[38%] sm:top-[5rem] md:left-[37%] lg:left-[38%] lg:top-[8rem] lg:text-[4rem] md:top-[8rem] text-[2.2rem] md:text-[3rem] font-century">
               &
             </span>
-            <h1 className="absolute left-[40%] top-[2rem] sm:text-[8rem] sm:left-[44%] sm:top-[1.9rem] md:left-[58%] lg:text-[15rem] lg:left-[44%] lg:top-[2rem] md:top-[4.2rem] text-[6rem] md:text-[5.8rem] font-retro">
+            <h1 className="absolute left-[40%] top-[2rem] sm:text-[8rem] sm:left-[44%] sm:top-[1.9rem] md:left-[44%] lg:text-[15rem] lg:left-[43%] lg:top-[2rem] md:top-[4.2rem] text-[6rem] md:text-[10rem] font-retro">
               Diego
             </h1>
           </motion.div>

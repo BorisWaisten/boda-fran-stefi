@@ -128,7 +128,7 @@ const Party = () => {
           </div>
 
           <h3 className="text-3xl font-centuryBold text-primary ">VESTIMENTA</h3>
-          <p className="text-sm sm:text-lg font-century py-3">Formal - Elegante</p>
+          <p className="text-sm sm:text-lg font-century py-3">Elegante</p>
           <button
             onClick={() => router.push('/outfits')}
             className="relative overflow-hidden text-white bg-gradient-to-r from-[#e6c976] via-[#C4A24D] to-[#8f7537] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#C4A24D]/50 font-centuryBold rounded-full text-sm md:text-lg lg:text-xl px-8 py-3 text-center uppercase tracking-wider shadow-lg group"

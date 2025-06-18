@@ -18,29 +18,22 @@ export default function Gallery() {
         className="absolute top-[-25vh] h-[65vh] sm:h-auto w-full scale-110 sm:top-[-37.5vh] md:top-[-40vh] lg:top-[-60vh] xl:top-[-80vh] z-[0] pointer-events-none "
       />
       
-      {/* <motion.div
+      <motion.div
         ref={ref} // <- Esto es lo que faltaba
         initial={{ opacity: 0, y: 60 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-        className="relative w-[80%] md:w-[30%] h-[50vh] sm:w-[50%] sm:h-[62vh] md:h-[80vh] overflow-hidden rounded-[5vh] transition-all duration-700 ease-in-out z-10"
+        className="relative w-full overflow-hidden  transition-all duration-700 ease-in-out z-10"
       >
         <Image
-          src="/fondo.jpg"
+          src="/S&D-2.jpg"
           alt="Foto principal"
-          fill
-          className="object-cover"
+          width={1920}
+          height={1080}
+          className="scale-[1.2] w-full sm:scale-100  sm:object-cover lg:h-[70vh]  xl:h-[70vh] object-center"
           priority
         />
-      </motion.div> */}
-
-      <div>
-
-        <p className="text-white font-centuryBold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-          FOTO
-        </p>
-
-      </div>
+      </motion.div> 
 
       {/* SVG inferior decorativo */}
       <Image

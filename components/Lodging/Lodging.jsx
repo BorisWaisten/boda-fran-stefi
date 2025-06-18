@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import hospedajeIcon from '@/public/hospedaje.svg';
 import hojitasIcon from '@/public/hojitas.svg';
+import { useRouter } from 'next/navigation';
 
 const hospedajes = [
   {
@@ -34,6 +35,7 @@ const hospedajes = [
 ];
 
 const Lodging = () => {
+  const router = useRouter();
   return (
     <section className="relative py-12 bg-black text-center overflow-hidden">
       {/* SVG hojitas izquierda */}
@@ -49,26 +51,6 @@ const Lodging = () => {
         className="absolute top-12 right-[-3vh] rotate-[-10deg] w-[16vh] sm:right-[-5vh] sm:w-[25vh]  md:w-[30vh] lg:w-[35vh] lg:rigth-[-9vh] md:right-[-7vh] xl:right-[-7vh] transform "
       />
       
-      <Image
-        src="/trama.svg"
-        alt="Decoración"
-        width={1920}
-        height={200}
-        className="absolute top-[15%] right-[35%] w-full scale-110 sm:scale-[.5] sm:right-[42%] sm:top-[5%] md:scale-[.5] md:top-[10vh] lg:top-[-7vh] lg:right-[45vh] lg:scale-[.4] xl:top-[-30vh] xl:scale-[.3] xl:right-[50vh] z-[0] pointer-events-none "
-      />
-
-    <Image
-      src="/trama.svg"
-      alt="Decoración trama derecha"
-      width={1920}
-      height={200}
-      className="
-        block sm:hidden
-        absolute top-[59%] right-[-35%]
-        w-full scale-110
-        pointer-events-none z-0
-      "
-    />
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -90,33 +72,16 @@ const Lodging = () => {
             ¡Hospedaje!
           </h2>
         </div>
+          <button
+            onClick={() => router.push('/lodging')}
+            className="relative overflow-hidden text-white bg-gradient-to-r from-[#e6c976] via-[#C4A24D] to-[#8f7537] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#C4A24D]/50 font-centuryBold rounded-full text-sm md:text-lg lg:text-xl px-8 py-3 text-center uppercase tracking-wider shadow-lg group mt-4"
+          >
+            <span className="relative z-10">Ver</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent group-hover:via-white/30 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-out"></div>
+          </button>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-2 max-w-4xl mx-auto px-6 mt-6">
-          {hospedajes.map((hotel, index) => (
-            <motion.div
-              key={index}
-              className="flex flex-col items-center"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
-              viewport={{ once: true }}
-            >
-              <h3 className="text-primary font-centuryBold text-xl md:text-2xl uppercase mb-1">
-                {hotel.nombre}
-              </h3>
-              <p className="text-primary font-centuryBold whitespace-pre-line mb-1">
-                {hotel.direccion}
-              </p>
-              <p className="text-primary font-centuryBold">{`tel: ${hotel.telefono}`}</p>
-              <button
-                className="mt-4 bg-black text-primary font-centuryBold py-2 px-6 rounded-full shadow-md hover:bg-primary hover:text-primary transition-colors"
-                onClick={() => window.open(hotel.link)}
-              >
-                CÓMO LLEGAR
-              </button>
-            </motion.div>
-          ))}
-        </div>
+      
+
       </motion.div>
     </section>
   );

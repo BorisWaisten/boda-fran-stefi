@@ -10,7 +10,7 @@ const Invitation = () => {
     {
       title: 'CEREMONIA',
       icon: '/iglesia.svg',
-      day: 'Sábado 22',
+      day: 'Sábado 15',
       time: '18 hs',
       place: '"Capilla María Auxiliadora"',
       street:'Presbitero Joannas y Aristóbulo del Valle',
@@ -31,7 +31,7 @@ const Invitation = () => {
     {
       title: 'CIVIL | FIESTA',
       icon: '/brindis.svg',
-      day: 'Sábado 22',
+      day: 'Sábado 15',
       time: '19 hs',
       place: 'Salón "La Lidia"',
       street: '743 Dr. Armando H. Zerolli',

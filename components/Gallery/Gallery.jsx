@@ -21,7 +21,7 @@ export default function Gallery() {
           width={1920}
           height={60}
           className="absolute left-0 w-full z-20 pointer-events-none sm:hidden"
-          style={{ height: '450px', top: '-61%' }}
+          style={{ height: '440px', top: '-57%' ,scale: '1.4'}}
         />
         {/* SVG superior sm+ */}
         <Image
@@ -43,7 +43,7 @@ export default function Gallery() {
             src="/S&D-2.jpg"
             alt="Foto principal"
             fill
-            className="sm:hidden absolute  top-0 left-0 z-10"
+            className="sm:hidden object-contain  absolute  top-0 left-0 z-10"
             priority
           />
            <Image
@@ -62,7 +62,7 @@ export default function Gallery() {
           width={1920}
           height={60}
           className="absolute left-0 w-full z-20 pointer-events-none sm:hidden"
-          style={{ height: '450px', top: '30%', transform: 'rotate(180deg)' }}
+          style={{ height: '440px', top: '20%',scale: '1.4', transform: 'rotate(180deg)' }}
         />
         {/* SVG inferior sm+ */}
         <Image

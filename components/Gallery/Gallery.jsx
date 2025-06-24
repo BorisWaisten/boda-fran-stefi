@@ -9,13 +9,13 @@ export default function Gallery() {
     triggerOnce: true,
   })
   return (
-    <section className="relative bg-primary md:py-8 h-[75vh] md:h-screen flex items-center justify-center">
+    <section className="relative bg-primary md:py-8 h-[45vh] md:h-screen flex items-center justify-center">
       <Image
         src="/papelrasgadoblack.svg"
         alt="Decoración"
         width={1920}
         height={200}
-        className="absolute top-[-25vh] h-[65vh] sm:h-auto w-full scale-110 sm:top-[-37.5vh] md:top-[-40vh] lg:top-[-60vh] xl:top-[-80vh] z-[0] pointer-events-none "
+        className="absolute top-[-25vh] z-20 h-[65vh] sm:h-[115vh]   w-full scale-110 md:h-[85vh] lg:h-[150vh] lg:top-[-60vh] xl:top-[-75vh] xl:scale-[1.5] pointer-events-none "
       />
       
       <motion.div
@@ -30,7 +30,7 @@ export default function Gallery() {
           alt="Foto principal"
           width={1920}
           height={1080}
-          className="scale-[1.2] w-full sm:scale-100  sm:object-cover lg:h-[70vh]  xl:h-[70vh] object-center"
+          className="scale-[1.2] w-full sm:scale-100 sm:h-[68vh] sm:object-cover md:h-[70vh] lg:h-[90vh]  xl:h-[100vh] object-center"
           priority
         />
       </motion.div> 
@@ -41,7 +41,7 @@ export default function Gallery() {
         alt="Decoración"
         width={1920}
         height={200}
-        className="top-[35vh] rotate-180 h-[65vh] sm:h-auto scale-110 w-full  absolute sm:top-[50vh] md:top-[45vh] lg:top-[38vh] xl:top-[15vh] z-[0] pointer-events-none"
+        className="top-[12vh] z-20  rotate-180 h-[52vh] sm:h-[80vh] sm:scale-125  w-full  absolute md:h-[148vh] lg:scale-[1.8] lg:h-[80vh] lg:top-[55vh] xl:h-[125vh] xl:scale-[1.5] xl:top-[38vh] pointer-events-none"
       />
     </section>
   );

@@ -52,7 +52,7 @@ const Invitation = () => {
   ];
 
   return (
-    <section className="relative z-10 text-center mt-10 md:mt-14 ">
+    <section className="relative z-30 text-center mt-10 md:mt-14 ">
       
       
       <div className="grid grid-cols-1 mx-auto  md:grid-cols-2 gap-10 md:gap-0 max-w-5xl  ">
@@ -91,10 +91,10 @@ const Invitation = () => {
             </div>
 
             <button
-              className="relative overflow-hidden text-white bg-gradient-to-r from-[#e6c976] via-[#C4A24D] to-[#8f7537] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#C4A24D]/50 font-centuryBold rounded-full text-sm md:text-lg lg:text-xl px-8 py-3 text-center uppercase tracking-wider shadow-lg group mt-4"
+              className="relative overflow-hidden  text-white bg-gradient-to-r from-[#e6c976] via-[#C4A24D] to-[#8f7537] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#C4A24D]/50 font-centuryBold rounded-full text-sm md:text-lg lg:text-xl px-8 py-3 text-center uppercase tracking-wider shadow-lg group mt-4"
               onClick={() => window.open(evento.address)}
             >
-              <span className="relative z-10">Cómo Llegar</span>
+              <span className="relative ">Cómo Llegar</span>
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent group-hover:via-white/30 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-out"></div>
             </button>
           </motion.div>

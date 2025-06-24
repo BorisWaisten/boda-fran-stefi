@@ -46,7 +46,7 @@ const Party = () => {
 
   return (
     <motion.div
-      className="relative text-primary z-20 mb-10 container  mt-1 text-center mx-auto"
+      className="relative text-primary z-20 mt-10 sm:mt-1 mb-10 container   text-center mx-auto"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}

@@ -27,13 +27,13 @@ const Header = () => {
             transition={{ duration: 1.2, ease: 'easeOut', delay: 0.5 }}
             className="relative w-full h-[10rem] md:h-[14rem]"
           >
-            <h1 className="absolute left-[20%] top-[-2rem] sm:text-[8rem] sm:top-[-3rem] sm:left-[30%] md:left-[29%] lg:left-[28%] lg:top-[-6rem] lg:text-[15rem] md:top-[-1.5rem] text-[6rem] md:text-[10rem] font-retro">
+            <h1 className="absolute left-[20%] top-[-7rem] sm:text-[8rem] sm:top-[-3rem] sm:left-[30%] md:left-[29%] lg:left-[28%] lg:top-[-6rem] lg:text-[15rem] md:top-[-1.5rem] text-[6rem] md:text-[10rem] font-retro">
               Shirley
             </h1>
-            <span className="absolute left-[32%] top-[3.8rem] sm:left-[38%] sm:top-[5rem] md:left-[37%] lg:left-[38%] lg:top-[8rem] lg:text-[4rem] md:top-[8rem] text-[2.2rem] md:text-[3rem] font-century">
+            <span className="absolute left-[32%] top-[-1.8rem] sm:left-[38%] sm:top-[5rem] md:left-[37%] lg:left-[38%] lg:top-[8rem] lg:text-[4rem] md:top-[8rem] text-[2.2rem] md:text-[3rem] font-century">
               &
             </span>
-            <h1 className="absolute left-[40%] top-[2rem] sm:text-[8rem] sm:left-[44%] sm:top-[1.9rem] md:left-[44%] lg:text-[15rem] lg:left-[43%] lg:top-[2rem] md:top-[4.2rem] text-[6rem] md:text-[10rem] font-retro">
+            <h1 className="absolute left-[40%] top-[-3rem] sm:text-[8rem] sm:left-[44%] sm:top-[1.9rem] md:left-[44%] lg:text-[15rem] lg:left-[43%] lg:top-[2rem] md:top-[4.2rem] text-[6rem] md:text-[10rem] font-retro">
               Diego
             </h1>
           </motion.div>
@@ -42,7 +42,7 @@ const Header = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: 'easeOut', delay: 1 }}
-            className="sm:absolute sm:top-[80%] text-[1.5rem] md:text-[1.8rem] lg:text-[2.5rem] lg:pt-[2rem] font-centuryBold"
+            className="absolute top-[50%]   sm:top-[80%] text-[1.5rem] md:text-[1.8rem] lg:text-[2.5rem] lg:pt-[2rem] font-centuryBold"
           >
             15.11.25
           </motion.p>

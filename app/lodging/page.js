@@ -32,6 +32,16 @@ const hospedajes = [
     telefono: '(011) 15 45798065',
     link: 'https://www.google.com/maps/place/Las+casitas+de+urdi/@-32.6941778,-58.8802585,601m/data=!3m2!1e3!4b1!4m6!3m5!1s0x95b0448e534ae957:0x8696527931136501!8m2!3d-32.6941823!4d-58.8776836!16s%2Fg%2F11c2l97lx5?entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D',
   },
+  {
+    nombre: 'UrdiAlpinas',
+    direccion: 'Pertegarini 435\nUrdinarrain, Entre Ríos',
+    telefono: '(3446) 642939',
+    link: 'https://www.google.com/maps/place/Urdi+Alpinas/@-32.6870681,-58.8830141,855m/data=!3m2!1e3!4b1!4m6!3m5!1s0x95b045c1c3879885:0xc456e37f007f3a8c!8m2!3d-32.6870681!4d-58.8804338!16s%2Fg%2F11y1gqmssn?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D',
+  },
+  {
+    nombre: 'Hospedaje Don Martin',
+    telefono: '(3446) 481137',
+  }
 ];
 
 const LodgingPage = () => {
@@ -100,13 +110,15 @@ const LodgingPage = () => {
                 {hotel.direccion}
               </p>
               <p className="text-primary font-centuryBold">{`tel: ${hotel.telefono}`}</p>
-              <button
-                className="relative  overflow-hidden text-white bg-gradient-to-r from-[#e6c976] via-[#C4A24D] to-[#8f7537] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#C4A24D]/50 font-centuryBold rounded-full text-sm md:text-lg lg:text-xl px-8 py-3 text-center uppercase tracking-wider shadow-lg group mt-4"
-                onClick={() => window.open(hotel.link)}
-              >
-                <span className="relative z-10">CÓMO LLEGAR</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent group-hover:via-white/30 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-out"></div>
-              </button>
+              {hotel.link && (
+                <button
+                  className="relative  overflow-hidden text-white bg-gradient-to-r from-[#e6c976] via-[#C4A24D] to-[#8f7537] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-[#C4A24D]/50 font-centuryBold rounded-full text-sm md:text-lg lg:text-xl px-8 py-3 text-center uppercase tracking-wider shadow-lg group mt-4"
+                  onClick={() => window.open(hotel.link)}
+                >
+                  <span className="relative z-10">CÓMO LLEGAR</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent group-hover:via-white/30 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000 ease-out"></div>
+                </button>
+              )}
             </motion.div>
           ))}
         </div>

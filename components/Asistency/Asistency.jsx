@@ -6,7 +6,7 @@ const Asistency = () => {
 
   const handleRedirect = () => {
     // Aquí puedes reemplazar la URL con el enlace de tu formulario de Google
-    window.open('https://forms.gle/rdJmT8JmCkvHQxQb6', '_blank');
+    window.open('https://forms.gle/s8RH1PEDoz5G2hsM9', '_blank');
   };
 
   return (

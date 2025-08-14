@@ -4,15 +4,18 @@
 
 @layer base {
     :root {
-        /* For rgb(255 115 179 / <alpha-value>) */
-        --color-primary: 181 137 52; /* ✅ correcto para Tailwind */
-        --color-secondary: 0 0 0;
-        --color-text-primary: 181 137 52; /* ✅ correcto para Tailwind */
-        --color-text-secondary: 0 0 0;
-
+        /* Colores auténticos de invitaciones católicas góticas */
+        --color-primary: 139 69 19; /* Saddle Brown - marrón oscuro elegante */
+        --color-secondary: 184 134 11; /* Dark Goldenrod - dorado profundo */
+        --color-accent: 245 245 220; /* Beige - crema elegante */
+        --color-text-primary: 184 134 11; /* Dorado para texto principal */
+        --color-text-secondary: 139 69 19; /* Marrón para texto secundario */
+        --color-background: 245 245 220; /* Beige para fondos */
+        --color-dark: 25 25 25; /* Negro elegante */
     }
 }
 
+/* Fuentes existentes */
 @font-face {
   font-family: 'Century Gothic';
   src: url('/fonts/century-gothic.ttf') format('truetype');
@@ -46,4 +49,38 @@
   src: url('/fonts/retro-signature.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+/* Nuevas fuentes góticas y religiosas */
+@font-face {
+  font-family: 'Gothic Title';
+  src: url('/fonts/gothic/UnifrakturMaguntia-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Religious Subtitle';
+  src: url('/fonts/gothic/CrimsonText-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Religious Body';
+  src: url('/fonts/gothic/CrimsonText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Estilos para mobile-first */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    line-height: 1.2;
+  }
 }

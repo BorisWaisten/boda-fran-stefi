@@ -2,77 +2,86 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import GothicCross from '../Invitation/GothicCross';
 
 export default function Gallery() {
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
   });
+
+  const images = [
+    '/bodaF&S/foto3.jpeg',
+  ];
+
   return (
-    <section className="w-full flex justify-center items-center bg-primary py-8">
-      <div
-        className="relative w-full mx-auto"
-        style={{ height: '60vw', maxHeight: 500, minHeight: 320 }}
+    <section className="w-full py-16 px-4 bg-gradient-to-b from-[rgb(245,245,220)] via-[rgb(245,245,220)] to-[rgb(245,245,220)] text-dark">
+      {/* Título de la sección */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className="text-center mb-12"
       >
-        {/* SVG superior mobile */}
-        <Image
-          src="/papelrasgadoblack.svg"
-          alt="Decoración superior"
-          width={1920}
-          height={60}
-          className="absolute left-0 w-full z-20 pointer-events-none sm:hidden"
-          style={{ height: '440px', top: '-57%' ,scale: '1.4'}}
-        />
-        {/* SVG superior sm+ */}
-        <Image
-          src="/papelrasgadoblack.svg"
-          alt="Decoración superior"
-          width={1920}
-          height={200}
-          className="hidden sm:block absolute top-[-28vh] z-20 h-[65vh] sm:h-[115vh] w-full scale-110 md:scale-[1.8] md:h-[60vh] lg:scale-[1] lg:h-[120vh] lg:top-[-60vh] xl:top-[-75vh] xl:scale-[1.5] pointer-events-none"
-        />
-        {/* Imagen principal */}
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 60 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-          className="absolute top-0 left-0 w-full h-full z-10"
-        >
-          <Image
-            src="/S&D-2.jpg"
-            alt="Foto principal"
-            fill
-            className="sm:hidden object-contain  absolute  top-0 left-0 z-10"
-            priority
-          />
-           <Image
-            src="/S&D-2.jpg"
-            alt="Foto principal"
-            width={1920}
-            height={1080}
-            className="hidden sm:block lg:object-cover w-full h-full  z-10"
-            priority
-          />
-        </motion.div>
-        {/* SVG inferior mobile */}
-        <Image
-          src="/papelrasgadoblack.svg"
-          alt="Decoración inferior"
-          width={1920}
-          height={60}
-          className="absolute left-0 w-full z-20 pointer-events-none sm:hidden"
-          style={{ height: '440px', top: '20%',scale: '1.4', transform: 'rotate(180deg)' }}
-        />
-        {/* SVG inferior sm+ */}
-        <Image
-          src="/papelrasgadoblack.svg"
-          alt="Decoración inferior"
-          width={1920}
-          height={200}
-          className="hidden sm:block absolute z-20 rotate-180 h-[56vh] sm:h-[80vh] sm:scale-125 w-full md:h-[90vh] md:top-[12vh] lg:scale-[1] lg:h-[120vh] lg:top-[-2vh] xl:h-[125vh] xl:scale-[1.5] xl:top-[38vh] pointer-events-none"
-        />
+        <h2 className="font-gothicTitle text-3xl md:text-4xl lg:text-5xl text-dark mb-4 tracking-wider">
+          Nosotros 
+        </h2>
+        
+      </motion.div>
+
+      {/* Galería de imágenes */}
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {images.map((image, index) => (
+            <motion.div
+              key={index}
+              ref={ref}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: index * 0.2 }}
+              className="relative group overflow-hidden rounded-lg border border-dark/20 hover:border-dark/40 transition-all duration-300"
+            >
+              <div className="aspect-[4/5] relative overflow-hidden">
+                <Image
+                  src={image}
+                  alt={`Foto ${index + 1}`}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 border-2 border-transparent group-hover:border-dark/50 transition-all duration-300 rounded-lg"></div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
+
+      {/* Mensaje religioso */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+        className="text-center mt-12"
+      >
+        <div className="bg-gradient-to-br from-gray-800/30 to-black/30 backdrop-blur-sm rounded-lg border border-dark/20 p-6 max-w-2xl mx-auto relative">
+          {/* Cruz gótica decorativa */}
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="w-10 h-10 bg-dark/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+              <GothicCross size={20} color="#8B4513" />
+            </div>
+          </div>
+          
+          <p className="font-religiousBody text-balance text-dark/80 text-sm md:text-base italic mb-2">
+            "Porque donde están dos o tres congregados en mi nombre, allí estoy yo en medio de ellos"
+          </p>
+            <p className="font-religiousSubtitle text-dark/60 text-xs md:text-sm">
+            - Mateo 18:20
+          </p>
+        </div>
+      </motion.div>
     </section>
   );
 }

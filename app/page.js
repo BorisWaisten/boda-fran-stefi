@@ -3,14 +3,10 @@ import Gallery from '@/components/Gallery/Gallery';
 import Invitation from '@/components/Invitation/Invitation';
 import Footer from '@/components/Footer';
 import '../components/components.css';
-import Party from '../components/Party/Party';
-import Date from '@/components/Date/Date';
-import Regalos from '@/components/Gifts/Gifts';
+import '../components/religious-styles.css';
 import ConfirmarAsistencia from '@/components/Asistency/ConfirmAsistency';
 import { layourMetadata } from './layout';
-import MusicPlayer from '@/components/MusicPlayer'; // Importa el nuevo componente
 import "./globals.css"
-import Lodging from '@/components/Lodging/Lodging';
 
 export const metadata = {
   ...layourMetadata,
@@ -28,33 +24,23 @@ export const metadata = {
 
 const Home = () => {
   return (
-    <div className=" flex flex-col items-center bg-black justify-center overflow-x-hidden">
+    <div className="flex flex-col items-center bg-[rgb(245,245,220)] justify-center overflow-x-hidden">
       <main className='w-full m-0 p-0'>
         <Header />
-        <section id="date">
-          <Date />
-        </section>
-        <section id="invitation">
+        {/* Spacer para el header fixed - ajustado para mobile */}
+        <div className="h-screen w-full"></div>
+        
+        <section id="invitation" className="relative z-10">
           <Invitation />
         </section>
-        <section id="gallery" className='custom-shadow mt-10'>
+        <section id="gallery" className='relative z-10'>
           <Gallery />
         </section>
-        <section id='party'> 
-          <Party />
-        </section>
-        <section id="regalos">
-          <Regalos />
-        </section> 
-        <section id='lodging'>
-          <Lodging />
-        </section>
-        <section id="asistency">
+        <section id="asistency" className="relative z-10">
           <ConfirmarAsistencia />
         </section>
       </main>
       <Footer />
-      <MusicPlayer />
     </div>
   );
 };

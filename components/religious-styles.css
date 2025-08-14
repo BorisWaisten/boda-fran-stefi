@@ -1,0 +1,144 @@
+/* Estilos específicos para el diseño religioso y gótico */
+
+/* Efectos de iluminación dorada */
+.golden-glow {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.golden-text-glow {
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Bordes decorativos góticos */
+.gothic-border {
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #fbbf24, #f59e0b, #d97706) 1;
+}
+
+.gothic-border-top {
+  border-top: 2px solid;
+  border-image: linear-gradient(90deg, transparent, #fbbf24, transparent) 1;
+}
+
+/* Efectos de transparencia y blur */
+.religious-glass {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+/* Animaciones religiosas */
+@keyframes golden-pulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  }
+}
+
+.golden-pulse {
+  animation: golden-pulse 3s ease-in-out infinite;
+}
+
+/* Efectos de texto gótico */
+.gothic-text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Decoraciones religiosas */
+.religious-divider {
+  position: relative;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #fbbf24, transparent);
+  margin: 2rem 0;
+}
+
+.religious-divider::before,
+.religious-divider::after {
+  content: '✝';
+  position: absolute;
+  top: -10px;
+  color: #fbbf24;
+  font-size: 1.5rem;
+}
+
+.religious-divider::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.religious-divider::after {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+/* Estilos para mobile */
+@media (max-width: 768px) {
+  .religious-glass {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+  }
+  
+  .gothic-text-shadow {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+  
+  .religious-divider {
+    margin: 1rem 0;
+  }
+  
+  .religious-divider::before,
+  .religious-divider::after {
+    font-size: 1.2rem;
+    top: -8px;
+  }
+}
+
+/* Efectos de hover para elementos interactivos */
+.religious-button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.religious-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+}
+
+.religious-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.religious-button:hover::before {
+  left: 100%;
+}
+
+/* Estilos para iconos religiosos */
+.religious-icon {
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.religious-icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Efectos de fondo con patrones góticos */
+.gothic-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(255, 215, 0, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 75% 75%, rgba(255, 215, 0, 0.1) 2px, transparent 2px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+}

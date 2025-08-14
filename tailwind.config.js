@@ -9,11 +9,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        // Fuentes existentes
         century: ['"Century Gothic"', 'sans-serif'],
         centuryBold: ['"Century Gothic Bold"', 'sans-serif'],
         centuryItalic: ['"Century Gothic Italic"', 'sans-serif'],
         centuryBoldItalic: ['"Century Gothic Bold Italic"', 'sans-serif'],
         retro: ['"Retro Signature"', 'cursive'],
+        
+        // Nuevas fuentes góticas y religiosas
+        gothicTitle: ['"Gothic Title"', 'serif'],
+        religiousSubtitle: ['"Religious Subtitle"', 'serif'],
+        religiousBody: ['"Religious Body"', 'serif'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

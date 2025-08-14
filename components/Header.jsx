@@ -3,58 +3,96 @@ import React from 'react';
 import './components.css';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import MobileNav from './MobileNav';
+import GothicCross from './Invitation/GothicCross';
 
 const Header = () => {
   return (
-    <header className="relative overflow-hidden">
-      <div className="relative w-full h-[80vh] sm:h-[80vh] md:h-[120vh] lg:h-[1200px]">
+    <header className="absolute top-0 left-0 w-full z-40 bg-black/20 backdrop-blur-sm">
+      <div className="relative w-full h-screen">
         <Image
-          src="/S&D-1.jpg"
-          alt="header"
+          src="/bodaF&S/foto2.jpeg"
+          alt="Header religioso"
           layout="fill"
           objectFit="cover"
           objectPosition="center"
           quality={100}
           priority={true}
-          className="w-full h-full filter grayscale"
+          className="w-full h-full "
         />
 
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-white z-10">
+        {/* Overlay con estilo gótico católico */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
+        
+        
+        {/* Navegación móvil */}
+        <MobileNav />
+        
 
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-white z-10 px-4">
+          {/* Título principal con fuente gótica */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.2, ease: 'easeOut', delay: 0.5 }}
-            className="relative w-full h-[10rem] md:h-[14rem]"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5, ease: 'easeOut', delay: 0.3 }}
+            className="text-center mb-8"
           >
-            <h1 className="absolute left-[20%] top-[-7rem] sm:text-[8rem] sm:top-[-3rem] sm:left-[30%] md:left-[29%] lg:left-[28%] lg:top-[-6rem] lg:text-[15rem] md:top-[-1.5rem] text-[6rem] md:text-[10rem] font-retro">
-              Shirley
+            <h1 className="font-gothicTitle text-4xl md:text-6xl lg:text-8xl mb-4 tracking-wider text-[#f5f5dc]">
+              Stefi
             </h1>
-            <span className="absolute left-[32%] top-[-1.8rem] sm:left-[38%] sm:top-[5rem] md:left-[37%] lg:left-[38%] lg:top-[8rem] lg:text-[4rem] md:top-[8rem] text-[2.2rem] md:text-[3rem] font-century">
-              &
-            </span>
-            <h1 className="absolute left-[40%] top-[-3rem] sm:text-[8rem] sm:left-[44%] sm:top-[1.9rem] md:left-[44%] lg:text-[15rem] lg:left-[43%] lg:top-[2rem] md:top-[4.2rem] text-[6rem] md:text-[10rem] font-retro">
-              Diego
+            
+            {/* Símbolo religioso entre nombres */}
+            <div className="flex items-center justify-center mb-4">
+              <div className="w-1 h-8 bg-[#b8860b]/80 mx-4"></div>
+              <span className="font-religiousSubtitle text-[#b8860b] text-2xl md:text-3xl lg:text-4xl mx-4">
+                &
+              </span>
+              <div className="w-1 h-8 bg-[#b8860b]/80 mx-4"></div>
+            </div>
+            
+            <h1 className="font-gothicTitle text-4xl md:text-6xl lg:text-8xl tracking-wider text-[#f5f5dc]">
+              Fran
             </h1>
           </motion.div>
 
-          <motion.p
+          {/* Subtítulo con estilo religioso */}
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, ease: 'easeOut', delay: 1 }}
-            className="absolute top-[50%]   sm:top-[80%] text-[1.5rem] md:text-[1.8rem] lg:text-[2.5rem] lg:pt-[2rem] font-centuryBold"
+            transition={{ duration: 1.2, ease: 'easeOut', delay: 0.8 }}
+            className="text-center"
           >
-            15.11.25
-          </motion.p>
+            {/* Cruz gótica decorativa */}
+            <div className="flex justify-center mb-4">
+              <GothicCross size={35} color="#b8860b" />
+            </div>
+            
+            <p className="font-religiousSubtitle text-[#b8860b] text-lg md:text-xl lg:text-2xl mb-2 tracking-wide">
+              Unidos en el Amor de Dios
+            </p>
+            <p className="font-religiousBody text-[#f5f5dc] text-sm md:text-base lg:text-lg opacity-90">
+              Invitan a celebrar su Sagrado Matrimonio
+            </p>
+          </motion.div>
+
+          {/* Fecha con estilo gótico */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, ease: 'easeOut', delay: 1.2 }}
+            className="mt-8 text-center"
+          >
+            <div className="bg-white/10 backdrop-blur-sm rounded-none p-6 border-2 border-[#b8860b]/50">
+              <p className="font-gothicTitle text-[#b8860b] text-2xl md:text-3xl lg:text-4xl tracking-wider">
+                15.11.25
+              </p>
+              <p className="font-religiousBody text-[#f5f5dc] text-sm md:text-base mt-2 opacity-90">
+                Sábado, 15 de Noviembre de 2025
+              </p>
+            </div>
+          </motion.div>
         </div>
 
-        <Image
-          src="/papelrasgadoblack.svg"
-          alt="borde rasgado"
-          width={500}
-          height={100}
-          className="absolute w-full h-[65vh] sm:h-auto bottom-[-26vh] sm:bottom-[-30vh] md:bottom-[-40vh] lg:bottom-[-60vh] xl:bottom-[-80vh] scale-y-[-1] z-20 pointer-events-none"
-        />
       </div>
     </header>
   );

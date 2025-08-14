@@ -1,17 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
     :root {
-        /* Colores auténticos de invitaciones católicas góticas */
-        --color-primary: 139 69 19; /* Saddle Brown - marrón oscuro elegante */
-        --color-secondary: 184 134 11; /* Dark Goldenrod - dorado profundo */
-        --color-accent: 245 245 220; /* Beige - crema elegante */
-        --color-text-primary: 184 134 11; /* Dorado para texto principal */
-        --color-text-secondary: 139 69 19; /* Marrón para texto secundario */
-        --color-background: 245 245 220; /* Beige para fondos */
-        --color-dark: 25 25 25; /* Negro elegante */
+        /* Colores basados en la tarjeta original "Save the Date" */
+        --color-primary: 139 69 19; /* Saddle Brown - marrón rojizo oscuro */
+        --color-secondary: 255 215 0; /* Gold - dorado brillante */
+        --color-accent: 255 250 240; /* Floral White - crema muy claro */
+        --color-text-primary: 139 69 19; /* Marrón rojizo oscuro para texto principal */
+        --color-text-secondary: 255 215 0; /* Dorado para acentos */
+        --color-background: 255 250 240; /* Crema muy claro para fondos */
+        --color-dark: 139 69 19; /* Marrón rojizo oscuro */
+        --color-burgundy: 128 0 32; /* Borgoña para elementos florales */
     }
 }
 
@@ -71,6 +74,72 @@
   src: url('/fonts/gothic/CrimsonText-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'AnastasiaScript';
+  src: url('/fonts/AnastasiaScript.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fuente Cormorant Garamond para subtítulos */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('/fonts/cormorant-garamond/CormorantGaramond-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('/fonts/cormorant-garamond/CormorantGaramond-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('/fonts/cormorant-garamond/CormorantGaramond-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Fuente Cormorant SC para descripciones */
+@font-face {
+  font-family: 'Cormorant SC';
+  src: url('/fonts/cormorant-sc/CormorantSC-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant SC';
+  src: url('/fonts/cormorant-sc/CormorantSC-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant SC';
+  src: url('/fonts/cormorant-sc/CormorantSC-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Estilo específico para los nombres */
+.names-anastasia {
+  font-family: 'AnastasiaScript', cursive !important;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.05em;
 }
 
 /* Estilos para mobile-first */

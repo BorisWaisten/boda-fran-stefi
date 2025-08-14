@@ -37,7 +37,7 @@ const Header = () => {
             transition={{ duration: 1.5, ease: 'easeOut', delay: 0.3 }}
             className="text-center mb-8"
           >
-            <h1 className="font-gothicTitle text-4xl md:text-6xl lg:text-8xl mb-4 tracking-wider text-[#f5f5dc]">
+            <h1 className="names-anastasia text-4xl md:text-6xl lg:text-8xl mb-4 tracking-wider text-[#fffaf0]">
               Stefi
             </h1>
             
@@ -50,7 +50,7 @@ const Header = () => {
               <div className="w-1 h-8 bg-[#b8860b]/80 mx-4"></div>
             </div>
             
-            <h1 className="font-gothicTitle text-4xl md:text-6xl lg:text-8xl tracking-wider text-[#f5f5dc]">
+            <h1 className="names-anastasia text-4xl md:text-6xl lg:text-8xl tracking-wider text-[#fffaf0]">
               Fran
             </h1>
           </motion.div>
@@ -67,30 +67,14 @@ const Header = () => {
               <GothicCross size={35} color="#b8860b" />
             </div>
             
-            <p className="font-religiousSubtitle text-[#b8860b] text-lg md:text-xl lg:text-2xl mb-2 tracking-wide">
+            <p className="font-cormorantGaramond text-[#b8860b] text-lg md:text-xl lg:text-2xl mb-2 tracking-wide">
               Unidos en el Amor de Dios
             </p>
-            <p className="font-religiousBody text-[#f5f5dc] text-sm md:text-base lg:text-lg opacity-90">
+            <p className="font-cormorantSC text-[#f5f5dc] text-sm md:text-base lg:text-lg opacity-90">
               Invitan a celebrar su Sagrado Matrimonio
             </p>
           </motion.div>
 
-          {/* Fecha con estilo gótico */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.2, ease: 'easeOut', delay: 1.2 }}
-            className="mt-8 text-center"
-          >
-            <div className="bg-white/10 backdrop-blur-sm rounded-none p-6 border-2 border-[#b8860b]/50">
-              <p className="font-gothicTitle text-[#b8860b] text-2xl md:text-3xl lg:text-4xl tracking-wider">
-                15.11.25
-              </p>
-              <p className="font-religiousBody text-[#f5f5dc] text-sm md:text-base mt-2 opacity-90">
-                Sábado, 15 de Noviembre de 2025
-              </p>
-            </div>
-          </motion.div>
         </div>
 
       </div>

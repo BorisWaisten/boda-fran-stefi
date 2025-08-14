@@ -20,6 +20,10 @@ module.exports = {
         gothicTitle: ['"Gothic Title"', 'serif'],
         religiousSubtitle: ['"Religious Subtitle"', 'serif'],
         religiousBody: ['"Religious Body"', 'serif'],
+        anastasiaScript: ['"AnastasiaScript"', 'cursive'],
+        // Nuevas fuentes Cormorant
+        cormorantGaramond: ['"Cormorant Garamond"', 'serif'],
+        cormorantSC: ['"Cormorant SC"', 'serif'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

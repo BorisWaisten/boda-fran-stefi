@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import GothicCross from './GothicCross';
 
+
 const Invitation = () => {
   const informacion = [
     {
@@ -160,12 +161,12 @@ const Invitation = () => {
             {/* Decoración superior */}
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <div className="w-12 h-12 bg-[#b8860b] rounded-full flex items-center justify-center">
-                <span className="text-white text-xl">✝</span>
+                <GothicCross size={24} color="white" />
               </div>
             </div>
             
             <p className="font-religiousBody text-balance text-white text-lg md:text-xl italic mb-3">
-              "Lo que Dios ha unido, que no lo separe el hombre"
+              &ldquo;Lo que Dios ha unido, que no lo separe el hombre&rdquo;
             </p>
             <p className="font-religiousSubtitle text-[#b8860b] text-sm md:text-base">
               - Marcos 10:9

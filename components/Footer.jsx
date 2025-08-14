@@ -1,20 +1,14 @@
 'use client'
 import React from 'react';
-import { FaInstagram, FaGlobe, FaEnvelope, FaWhatsapp, FaHeart } from 'react-icons/fa';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
-import GothicCross from './Invitation/GothicCross';
+
 
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-[#1a1a1a] to-[#2d2d2d] w-full py-12 text-gray-300 relative overflow-hidden">
-      {/* Fondo decorativo */}
-      <div className="absolute inset-0 bg-[url('/trama.svg')] opacity-5"></div>
-      
-      {/* Contenido principal */}
       <div className="relative z-10 max-w-6xl mx-auto px-4">
+
         
-        {/* Sección inferior */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <Image

@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
+
 export default function ConfirmarAsistencia() {
     const router = useRouter();
     return (
@@ -16,6 +17,7 @@ export default function ConfirmarAsistencia() {
         <h2 className= {`   text-lg sm:text-2xl md:text-3xl lg:text-4xl  mb-2 `}>
           Confirmación de Asistencia
         </h2>
+        
         <p className=" text-[0.6rem] font-centuryBoldItalic sm:text-sm md:text-base lg:text-lg mb-4 ">
           !NO OLVIDES CONFIRMAR, TE ESPERAMOS!
         </p>

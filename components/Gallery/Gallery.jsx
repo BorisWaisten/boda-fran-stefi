@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import GothicCross from '../Invitation/GothicCross';
 
+
 export default function Gallery() {
   const { ref, inView } = useInView({
     threshold: 0.5,
@@ -75,7 +76,7 @@ export default function Gallery() {
           </div>
           
           <p className="font-religiousBody text-balance text-dark/80 text-sm md:text-base italic mb-2">
-            "Porque donde están dos o tres congregados en mi nombre, allí estoy yo en medio de ellos"
+            &ldquo;Porque donde están dos o tres congregados en mi nombre, allí estoy yo en medio de ellos&rdquo;
           </p>
             <p className="font-religiousSubtitle text-dark/60 text-xs md:text-sm">
             - Mateo 18:20

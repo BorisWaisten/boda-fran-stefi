@@ -13,10 +13,10 @@ export const metadata = {
   openGraph: {
     images: [
       {
-        url: 'https://boda-syd.vercel.app/fondo.jpg', 
+        url: 'https://boda-fran-stefi.vercel.app/_next/image?url=%2FbodaF%26S%2Ffoto2.jpeg&w=1080&q=100', 
         width: 1200,
         height: 630,
-        alt: 'Imagen representativa de la boda de S&D',
+        alt: 'Imagen representativa de la boda de S&F',
       },
     ],
     }

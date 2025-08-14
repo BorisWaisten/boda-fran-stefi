@@ -1,19 +1,21 @@
 import "./globals.css";
 
 export const layourMetadata = {
-  title: 'S&D - 15/11/2025',
+  title: 'S&F - 29/10/2025',
   description: '¡Nos casamos! Ven y celebra con nosotros este día tan especial.',
   icons: {
     icon:'/logo.ico',
   },
-  metadataBase: new URL('https://martuygino.vercel.app'), // Agrega esta línea
   openGraph: {
-    title: 'S&D - Nuestra Boda',
-    description: '¡Nos casamos! Ven y celebra con nosotros este día tan especial.',
-    url: 'https://martuygino.vercel.app/',
-    type: 'website',
-    images: [{},],
-  },
+    images: [
+      {
+        url: 'https://boda-fran-stefi.vercel.app/_next/image?url=%2FbodaF%26S%2Ffoto2.jpeg&w=1080&q=100', 
+        width: 1200,
+        height: 630,
+        alt: 'Imagen representativa de la boda de S&F',
+      },
+    ],
+    }
 };
 
 export default function RootLayout({ children }) {

@@ -9,7 +9,7 @@ export const layourMetadata = {
   openGraph: {
     images: [
       {
-        url: 'https://boda-fran-stefi.vercel.app/_next/image?url=%2FbodaF%26S%2Ffoto2.jpeg&w=1080&q=100', 
+        url: 'https://boda-fran-stefi.vercel.app/bodaF&S/foto2.jpeg', 
         width: 1200,
         height: 630,
         alt: 'Imagen representativa de la boda de S&F',

@@ -8,6 +8,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        // Paleta otoñal inspirada en la imagen
+        terracota: '#8C4A32',
+        'ocre-gold': '#C7A463',
+        'warm-white': '#FDFBF7',
+      },
       fontFamily: {
         // Fuentes existentes
         century: ['"Century Gothic"', 'sans-serif'],
@@ -25,14 +31,6 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-      backgroundColor: {
-        primary: 'rgb(var(--color-primary) / <alpha-value>)',
-        secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
-      },
-      textColor: {
-        primary:' rgb(var(--color-text-primary) / <alpha-value>)',
-        secondary: 'rgb(var(--color-text-secondary) / <alpha-value>)',
       },
     },
   },

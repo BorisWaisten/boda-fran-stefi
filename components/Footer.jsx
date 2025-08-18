@@ -1,40 +1,33 @@
-'use client'
-import React from 'react';
-import Image from 'next/image';
-
+'use client';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-[#1a1a1a] to-[#2d2d2d] w-full py-12 text-gray-300 relative overflow-hidden">
-      <div className="relative z-10 max-w-6xl mx-auto px-4">
-
-        
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <Image
-              src="/logo.svg"
-              alt="Logo Waisten Programación"
-              width={40}
-              height={40}
-              className="w-10 h-10 select-none cursor-pointer transition-transform duration-300 hover:scale-110"
-              onClick={() => window.open('https://www.waistenprogramacion.com.ar/', '_blank')}
-            />
-            <p className="text-xs text-gray-500">
-              Desarrollado por{' '}
-              <a 
-                href="https://www.waistenprogramacion.com.ar/" 
-                className="text-[#b8860b] hover:text-white underline transition-colors duration-300"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Waisten Programación
-              </a>
+    <footer className="bg-terracota text-white py-12">
+      <div className="container mx-auto px-4">
+        <div className="text-center">
+          <div className="mb-6">
+            <h3 className="text-3xl font-centuryBold mb-2">
+              Fran <span className="text-ocre-gold">&</span> Stefi
+            </h3>
+            <p className="text-lg font-century opacity-90">
+              15 de Diciembre, 2024
             </p>
           </div>
           
-          <p className="text-xs text-gray-500 font-religiousBody">
-            © 2025 - Todos los derechos reservados
-          </p>
+          <div className="mb-8">
+            <p className="text-lg font-century mb-4">
+              Gracias por ser parte de este momento tan especial
+            </p>
+            <p className="font-century opacity-80">
+              Con amor, Fran y Stefi
+            </p>
+          </div>
+          
+          <div className="border-t border-ocre-gold/30 pt-6">
+            <p className="text-sm font-century opacity-70">
+              © 2024 - Hecho con ❤️ para nuestra boda
+            </p>
+          </div>
         </div>
       </div>
     </footer>

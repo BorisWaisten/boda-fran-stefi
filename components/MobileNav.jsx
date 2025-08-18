@@ -1,64 +1,91 @@
 'use client';
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 
-const MobileNav = () => {
-  const [isOpen, setIsOpen] = useState(false);
+import { motion, AnimatePresence } from 'framer-motion';
 
-  const menuItems = [
-    { name: 'Invitación', href: '#invitation' },
-    { name: 'Fecha', href: '#date' },
-    { name: 'Galería', href: '#gallery' },
-    { name: 'Fiesta', href: '#party' },
-    { name: 'Regalos', href: '#regalos' },
-    { name: 'Hospedaje', href: '#lodging' },
-    { name: 'Confirmar', href: '#asistency' },
-  ];
-
-  const scrollToSection = (href) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsOpen(false);
+const MobileNav = ({ isOpen, onClose, menuItems, activeSection, onSectionChange }) => {
+  const handleNavClick = (sectionId) => {
+    onSectionChange(sectionId);
+    onClose();
   };
 
   return (
-    <div className="fixed top-4 right-4 z-50">
-      {/* Botón de menú */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <div className="w-6 h-6 relative">
-          <span className={`absolute w-6 h-0.5 bg-white transform transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-2' : '-translate-y-1'}`}></span>
-          <span className={`absolute w-6 h-0.5 bg-white transform transition-all duration-300 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-          <span className={`absolute w-6 h-0.5 bg-white transform transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : 'translate-y-1'}`}></span>
-        </div>
-      </button>
+    <AnimatePresence>
+      {isOpen && (
+        <>
+          {/* Backdrop */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={onClose}
+            className="fixed inset-0 bg-black/50 z-40 md:hidden"
+          />
 
-      {/* Menú desplegable */}
-      <motion.div
-        initial={{ opacity: 0, y: -20, scale: 0.95 }}
-        animate={isOpen ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: -20, scale: 0.95 }}
-        transition={{ duration: 0.3 }}
-        className={`absolute top-16 right-0 w-48 bg-black/90 backdrop-blur-md border border-yellow-400/30 rounded-lg shadow-2xl overflow-hidden ${isOpen ? 'block' : 'hidden'}`}
-      >
-        <div className="py-2">
-          {menuItems.map((item, index) => (
-            <motion.button
-              key={item.name}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.3, delay: index * 0.1 }}
-              onClick={() => scrollToSection(item.href)}
-              className="w-full px-4 py-3 text-left text-white hover:bg-yellow-400/20 transition-all duration-300 font-religiousBody text-sm"
-            >
-              {item.name}
-            </motion.button>
-          ))}
-        </div>
-      </motion.div>
-    </div>
+          {/* Mobile Menu */}
+          <motion.div
+            initial={{ x: '100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '100%' }}
+            transition={{ type: 'tween', duration: 0.3 }}
+            className="fixed top-0 right-0 h-full w-80 bg-warm-white z-50 md:hidden shadow-2xl"
+          >
+            <div className="flex flex-col h-full">
+              {/* Header */}
+              <div className="flex items-center justify-between p-6 border-b border-ocre-gold/20">
+                <div className="text-2xl font-centuryBold text-terracota">
+                  F & S
+                </div>
+                <button
+                  onClick={onClose}
+                  className="p-2 text-terracota hover:text-ocre-gold transition-colors"
+                >
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              {/* Menu Items */}
+              <nav className="flex-1 p-6">
+                <ul className="space-y-4">
+                  {menuItems.map((item) => (
+                    <li key={item.id}>
+                      <button
+                        onClick={() => handleNavClick(item.id)}
+                        className={`w-full text-left py-3 px-4 rounded-lg font-century text-lg transition-all duration-300 ${
+                          activeSection === item.id
+                            ? 'bg-ocre-gold text-terracota font-centuryBold'
+                            : 'text-terracota hover:bg-terracota/10 hover:text-ocre-gold'
+                        }`}
+                      >
+                        {item.label}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+
+              {/* Footer */}
+              <div className="p-6 border-t border-ocre-gold/20">
+                <p className="text-sm text-terracota font-century text-center">
+                  15 de Diciembre, 2024
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </>
+      )}
+    </AnimatePresence>
   );
 };
 

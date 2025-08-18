@@ -1,4 +1,11 @@
 import "./globals.css";
+import { Rufina } from 'next/font/google';
+
+const rufina = Rufina({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const layourMetadata = {
   title: 'S&F - 29/10/2025',
@@ -21,7 +28,7 @@ export const layourMetadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" translate="no">
-      <body className= {`text-black overflow-x-hidden`} >{children}</body>
+      <body className={`${rufina.className} text-black overflow-x-hidden`}>{children}</body>
     </html>
   );
 }

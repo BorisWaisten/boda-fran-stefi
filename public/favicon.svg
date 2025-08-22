@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Anillo exterior -->
+  <circle cx="16" cy="16" r="14" stroke="#8B4513" stroke-width="2" fill="none"/>
+  <!-- Anillo interior -->
+  <circle cx="16" cy="16" r="10" stroke="#DAA520" stroke-width="1.5" fill="none"/>
+  <!-- Piedra central -->
+  <circle cx="16" cy="16" r="3" fill="#FFD700"/>
+  <!-- Reflejos en la piedra -->
+  <circle cx="14" cy="14" r="1" fill="#FFFFFF" opacity="0.8"/>
+</svg>

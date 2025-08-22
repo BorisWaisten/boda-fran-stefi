@@ -7,22 +7,56 @@ const rufina = Rufina({
   display: 'swap',
 });
 
-export const layourMetadata = {
-  title: 'S&F - 29/10/2025',
-  description: '¡Nos casamos! Ven y celebra con nosotros este día tan especial.',
+export const metadata = {
+  title: 'Stefi & Fran - Nos Casamos',
+  description: '¡Nos casamos! Sábado 11 de Octubre de 2025. Ven y celebra con nosotros este día tan especial.',
+  keywords: 'boda, casamiento, Stefi, Fran, matrimonio, celebración',
+  authors: [{ name: 'Stefi & Fran' }],
+  creator: 'Stefi & Fran',
+  publisher: 'Stefi & Fran',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   icons: {
-    icon:'/logo.ico',
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
   },
   openGraph: {
+    title: 'Stefi & Fran - Nos Casamos',
+    description: '¡Nos casamos! Sábado 11 de Octubre de 2025. Ven y celebra con nosotros este día tan especial.',
+    url: 'https://boda-fran-stefi.vercel.app',
+    siteName: 'Boda Stefi & Fran',
     images: [
       {
-        url: 'https://boda-fran-stefi.vercel.app/bodaF&S/foto2.jpeg', 
+        url: 'https://boda-fran-stefi.vercel.app/bodaF&S/background.jpg',
         width: 1200,
         height: 630,
-        alt: 'Imagen representativa de la boda de S&F',
+        alt: 'Stefi & Fran - Nos Casamos',
       },
     ],
-    }
+    locale: 'es_AR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Stefi & Fran - Nos Casamos',
+    description: '¡Nos casamos! Sábado 11 de Octubre de 2025. Ven y celebra con nosotros este día tan especial.',
+    images: ['https://boda-fran-stefi.vercel.app/bodaF&S/background.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {

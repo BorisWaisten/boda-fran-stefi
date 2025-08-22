@@ -78,7 +78,7 @@ const MobileNav = ({ isOpen, onClose, menuItems, activeSection, onSectionChange 
               {/* Footer */}
               <div className="p-6 border-t border-ocre-gold/20">
                 <p className="text-sm text-terracota font-century text-center">
-                  15 de Diciembre, 2024
+                  11 de Octubre, 2025
                 </p>
               </div>
             </div>

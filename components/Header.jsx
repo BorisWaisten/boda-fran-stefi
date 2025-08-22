@@ -8,9 +8,9 @@ const Header = ({ activeSection, onSectionChange }) => {
 
   const menuItems = [
     { id: 'inicio', label: 'Inicio' },
-    { id: 'nuestra-historia', label: 'Nuestra Historia' },
+    { id: 'nosotros', label: 'Nosotros' },
     { id: 'celebracion', label: 'Celebración' },
-    { id: 'como-llegar', label: 'Como Llegar' },
+    { id: 'rsvp', label: 'RSVP' },
     { id: 'regalos', label: 'Regalos' }
   ];
 
@@ -28,7 +28,7 @@ const Header = ({ activeSection, onSectionChange }) => {
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <div className="text-2xl md:text-3xl font-centuryBold text-terracota">
-                F & S
+               Š&F
               </div>
             </div>
 

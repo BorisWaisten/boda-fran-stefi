@@ -253,10 +253,7 @@ export default function Home() {
               </a>
               
               <div className="mt-6 p-4 bg-ocre-gold/10 rounded-lg">
-                <h4 className="text-lg font-centuryBold text-terracota mb-2">Código de Vestimenta</h4>
-                <p className="text-terracota font-century text-sm mb-2">Elegante</p>
-                <p className="text-terracota font-century text-sm mb-3">Militares: Uniforme social de invierno</p>
-                <p className="text-terracota font-century text-xs italic">
+                <p className="text-terracota font-century text-sm italic">
                   Teniendo en cuenta que el templo es la casa de Dios, les suplicamos cuidar el recogimiento, 
                   silencio y el decoro en la vestimenta.
                 </p>
@@ -276,6 +273,17 @@ export default function Home() {
               >
                 📍 Ver en Google Maps
               </a>
+            </div>
+          </div>
+          
+          {/* Código de Vestimenta */}
+          <div className="mt-12 text-center">
+            <div className="bg-white p-6 rounded-lg shadow-lg max-w-2xl mx-auto">
+              <h3 className="text-2xl font-centuryBold text-terracota mb-4">Código de Vestimenta</h3>
+              <div className="space-y-2">
+                <p className="text-terracota font-century text-lg">Elegante</p>
+                <p className="text-terracota font-century text-lg">Militares: Uniforme social de invierno</p>
+              </div>
             </div>
           </div>
         </div>

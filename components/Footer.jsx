@@ -10,7 +10,7 @@ const Footer = () => {
               Štefi <span className="text-ocre-gold">&</span> Fran
             </h3>
             <p className="text-lg font-century opacity-90">
-              11 de Octubre, 2025
+              11 de octubre, 2025
             </p>
           </div>
           

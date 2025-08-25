@@ -93,7 +93,7 @@ export default function Home() {
             className="w-full h-auto object-contain drop-shadow-2xl mb-6"
           />
           <div className="text-white font-serif italic text-xl md:text-2xl drop-shadow-lg tracking-wide">
-            Sábado 11 de Octubre de 2025
+            Sábado 11 de octubre de 2025
           </div>
         </div>
       </section>
@@ -167,50 +167,9 @@ export default function Home() {
                   aria-label="Ir a imagen 2"
                 ></button>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Sección Sagrada Familia y Cita Bíblica */}
-      <section className="min-h-screen flex items-center py-20 bg-gradient-to-b from-warm-white to-terracota/5">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-centuryBold text-terracota mb-12">
-              Nuestro <span className="text-ocre-gold">Ejemplo</span>
-            </h2>
-            
-            <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
-              <div className="space-y-6">
-                <div className="relative">
-                  <img 
-                    src="/bodaF&S/foto1.webp" 
-                    alt="Sagrada Familia" 
-                    className="w-full max-w-md mx-auto object-contain rounded-lg shadow-2xl"
-                  />
-                </div>
-              </div>
-              <div className="space-y-6 text-left">
-                <h3 className="text-3xl font-centuryBold text-terracota mb-4">
-                  La Sagrada Familia
-                </h3>
-                <div className="space-y-4 text-lg text-terracota font-century leading-relaxed">
-                  <p>
-                    La Sagrada Familia de Nazaret es nuestro modelo de amor, fe y santidad. 
-                    En José, María y Jesús encontramos el ejemplo perfecto de cómo construir 
-                    una familia basada en el amor de Dios.
-                  </p>
-                  <p>
-                    Como ellos, queremos que nuestro matrimonio sea un reflejo del amor 
-                    divino, donde cada día crezcamos juntos en fe, esperanza y caridad, 
-                    siguiendo el camino que nos han marcado.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            {/* Cita Bíblica */}
-            <div className="bg-white p-8 rounded-lg shadow-lg max-w-3xl mx-auto">
+              {/* Cita Bíblica */}
+            <div className="bg-white p-8 rounded-lg shadow-lg max-w-3xl mx-auto mb-12 mt-12">
               <div className="text-6xl text-ocre-gold mb-6">❝</div>
               <blockquote className="text-xl md:text-2xl text-terracota font-century italic leading-relaxed mb-6">
                 El amor no se deleita en la maldad,<br/>
@@ -221,6 +180,68 @@ export default function Home() {
               </blockquote>
               <div className="text-lg text-ocre-gold font-centuryBold">
                 1 Corintios 13:4-8
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sección Sagrada Familia y Cita Bíblica */}
+      <section className="min-h-screen flex items-center py-20 bg-gradient-to-b from-warm-white to-terracota/5">
+        <div className="container mx-auto px-4">
+          <div className="text-center mx-auto">
+            <h2 className="text-4xl md:text-5xl font-centuryBold text-terracota mb-12">
+              Nuestro <span className="text-ocre-gold">Ejemplo</span>
+            </h2>
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <div className="relative">
+                  <img 
+                    src="/bodaF&S/foto1.webp" 
+                    alt="Sagrada Familia" 
+                    className="w-full max-w-md mx-auto object-contain rounded-lg shadow-2xl"
+                  />
+                </div>
+              </div>
+              <div className="space-y-6 text-justify">
+                <h3 className="text-3xl font-centuryBold text-terracota mb-4">
+                  La Sagrada Familia
+                </h3>
+                <div className="space-y-4 text-lg text-terracota font-century leading-relaxed">
+                  <p>
+                  “Dios ha creado al hombre a su imagen y semejanza: 
+                  llamándolo a la existencia por amor, lo ha llamado al mismo tiempo al amor.
+                  </p>
+                  <p>
+                  Dios es amor y vive en sí mismo un misterio de comunión personal de amor. 
+                  Creándola a su imagen y conservándola continuamente en el ser, 
+                  Dios inscribe en la humanidad del hombre y de la mujer la vocación y 
+                  consiguientemente la capacidad y la responsabilidad del amor y de la comunión. 
+                  El amor es por tanto la vocación fundamental e innata de todo ser humano. […]
+                  </p>
+                  <p>
+                  La comunión entre Dios y los hombres halla su cumplimiento definitivo en Cristo Jesús, 
+                  el Esposo que ama y se da como Salvador de la humanidad, uniéndola a sí como su cuerpo.
+                  </p>
+                  <p>
+                  Él revela la verdad original del matrimonio, la verdad del «principio» y, 
+                  liberando al hombre de la dureza del corazón, lo hace capaz de realizarla plenamente.
+                  </p>
+                  <p>
+                  Esta revelación alcanza su plenitud definitiva en el don de amor que 
+                  el Verbo de Dios hace a la humanidad asumiendo la naturaleza humana, 
+                  y en el sacrificio que Jesucristo hace de sí mismo en la cruz por su Esposa, la Iglesia.
+                   En este sacrificio se desvela enteramente el designio que Dios ha impreso en la humanidad del hombre 
+                   y de la mujer desde su creación; el matrimonio de los bautizados se convierte así en el símbolo real de la nueva y eterna Alianza, 
+                   sancionada con la sangre de Cristo. El Espíritu que infunde el Señor renueva el corazón y hace al hombre 
+                   y a la mujer capaces de amarse como Cristo nos amó. El amor conyugal alcanza de este modo la plenitud a la que está ordenado interiormente, 
+                   la caridad conyugal, que es el modo propio y específico con que los esposos participan 
+                   y están llamados a vivir la misma caridad de Cristo que se dona sobre la cruz.” 
+                   (Juan Pablo II, Exhort. Ap. Familiaris Consortio, 1981, n. 11, 13.)
+                  </p>
+
+                </div>
               </div>
             </div>
           </div>
@@ -290,7 +311,7 @@ export default function Home() {
       </section>
 
       {/* Sección RSVP */}
-      <section id="rsvp" className="min-h-screen flex items-center py-20">
+      <section id="rsvp" className="flex items-center py-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-centuryBold text-terracota mb-6">
@@ -322,7 +343,7 @@ export default function Home() {
       </section>
 
       {/* Sección Regalos */}
-      <section id="regalos" className="min-h-screen flex items-center py-20 bg-gradient-to-b from-warm-white to-terracota/5">
+      <section id="regalos" className="flex items-center py-20 bg-gradient-to-b from-warm-white to-terracota/5">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-centuryBold text-terracota mb-6">
@@ -335,9 +356,7 @@ export default function Home() {
             </p>
             
             <div className="bg-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto">
-              <div className="text-4xl mb-6">💝</div>
-              <h3 className="text-2xl font-centuryBold text-terracota mb-6">Contribución</h3>
-              
+              <div className="text-4xl mb-6">💝</div>              
               <div className="space-y-4 text-left">
                 <div className="p-4 bg-ocre-gold/10 rounded-lg">
                   <h4 className="text-lg font-centuryBold text-terracota mb-2">Cuenta en dólares</h4>

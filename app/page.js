@@ -317,9 +317,6 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-centuryBold text-terracota mb-6">
               <span className="text-ocre-gold">RSVP</span>
             </h2>
-            <p className="text-xl text-terracota font-century mb-8 leading-relaxed">
-              Confirmar asistencia antes del 8 de septiembre
-            </p>
             
             <div className="bg-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto">
               <div className="text-4xl mb-6">📝</div>
